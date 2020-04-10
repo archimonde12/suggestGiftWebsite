@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-	<title> Demo </title>
+	<title>document</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
 	<script type="text/javascript" src="Styles/vendor/bootstrap.js"></script>
 	<link rel="stylesheet" href="Styles/vendor/bootstrap.css">
 	<link rel="stylesheet" href="Styles/fonts/css/all.css">
- 	<link rel="stylesheet" href="Styles/index.css">
+	 <link rel="stylesheet" href="Styles/Backgroud.css">
+	 <link rel="stylesheet" href="Styles/menu.css">
 </head>
 <body >
 	<!-- Phần 1 -->
@@ -25,7 +26,7 @@
 			<a href="#"><i class="fab fa-pinterest"></i></a>
 		</div>
 		<a href="#">
-			<img src="backgroud/logo.png" alt="" class="logo">
+			<img src="Styles/backgroud/logo.png" alt="" class="logo">
 		</a>
 		<div class="contentback">
 			<h3 class="chuto">
@@ -36,20 +37,39 @@
 			</small>
 		</div>
 		<a href="#" class="buttomxemthem">XEM THÊM!</a>
-		<img src="backgroud/back2.jpg" alt="" class="backgroud">
+		<img src="Styles/backgroud/back2.jpg" alt="" class="backgroud">
 	</div>
 	<!-- phần 2 -->
 	<div id="session2" class="container">
-		<div class="main_menu">
-			<ul>
+		<div class="header">
+			<ul id="main_menu">
 				<li><a href="">Trang chủ</a></li>
-				<li><a href="">Trang chủ</a></li>
-				<li><a href="">Trang chủ</a></li>
-				<li><a href="">Trang chủ</a></li>
+				<li><a href="">Sản phẩm</a>
+					<ul class="sub-menu">
+						<li><a href="#">Món ăn miền Bắc</a>
+							<ul class="sub-menu">
+								<li><a href="#">Tào phớ</a></li>
+								<li><a href="#">BÚn</a></li>
+								<li><a href="#">Miến</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Món ăn miền Trung</a>
+							<ul class="sub-menu">
+								<li><a href="#">phở</a></li>
+								<li><a href="#">mỳ</a></li>
+								<li><a href="#">miến</a></li>
+							</ul></li>
+						<li><a href="#">Món ăn miền Nam</a></li>
+						<li><a href="#">Ẩm thực đường phố</a></li>
+					</ul>
+				</li>
+				<li><a href="">Trang giữ</a></li>
+				<li><a href="">Trang gần cuối</a></li>
 				<li><a href="">Trang chủ</a></li>
 			</ul>
 		</div>
 	</div>
+	<script  src="JS/menu.js"></script>
 	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
