@@ -150,9 +150,6 @@ const listOfGift = [
         minPrice:1000000,
         maxPrice:4000000,
         imageLink:"images\Ring.jpg",
-        addressLink:["https://www.google.com/maps/place/PNJ+X%C3%A3+%C4%90%C3%A0n/@21.0163403,105.829697,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab82353cdf2b:0xea672d77b7bb9928!8m2!3d21.0163353!4d105.8318857",
-                     "https://www.google.com/maps/place/Skymond+Luxury/@21.019488,105.8262807,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab2e6358b22f:0xadf7e0bb3ecc97aa!8m2!3d21.019483!4d105.8284694",
-                     "https://www.google.com/maps/place/Trang+s%E1%BB%A9c+DTJ/@21.0108588,105.8232926,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7e374db16d:0x26b0baa7941294ff!8m2!3d21.0108538!4d105.8254813"],
         shopInfo:[{name:"PNJ", address:"243 Xã Đàn, Nam Đồng, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/PNJ+X%C3%A3+%C4%90%C3%A0n/@21.0163353,105.829697,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab82353cdf2b:0xea672d77b7bb9928!8m2!3d21.0163353!4d105.8318857"},
                   {name:"Skymond Luxury", address:"79 Ô Chợ Dừa, Chợ Dừa, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Skymond+Luxury/@21.019483,105.8262807,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab2e6358b22f:0xadf7e0bb3ecc97aa!8m2!3d21.019483!4d105.8284694"},
                   {name:"Trang sức DTJ", address:"153 Tây Sơn, Quang Trung, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Trang+s%E1%BB%A9c+DTJ/@21.0108538,105.8232926,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7e374db16d:0x26b0baa7941294ff!8m2!3d21.0108538!4d105.8254813"}]

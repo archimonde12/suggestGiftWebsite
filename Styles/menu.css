@@ -1,1 +1,89 @@
 /* ContainerMenu */
+#session2
+{
+    width: 100%;
+}
+#menu
+{
+    font-family: monospace;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+    background-color:salmon;
+    text-align: center;
+}
+#menu ul li a
+{
+    
+    color: white;
+    text-decoration: none;
+}
+#menu ul {
+    list-style: none;
+}
+#menu ul li
+{
+    position: relative;
+    text-decoration: none;
+}
+#menu > ul > li{
+    display: inline-block;
+    text-decoration: none;
+}
+#menu > ul > li > a{
+    display: block;
+    line-height: 40px;
+    padding:  0 15px;
+    text-decoration: none;
+}
+/* Submenu */
+#menu ul ul
+{
+    width: 200px;
+    background-color: salmon;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    z-index: 99;
+}
+#menu ul ul li
+{
+    line-height: 30px;
+    padding: 0 15px;
+}
+#menu ul ul li:hover
+{
+    background-color: rgb(247, 60, 39);
+    text-decoration: none;
+}
+/* hover and show submenu */
+#menu ul li:hover > ul
+{
+    opacity: 1;
+    visibility: visible;
+    top: 105%;
+}
+#menu ul ul li:hover > a
+{
+    color: rgb(0, 0, 0);
+}
+#menu ul ul ul{
+    top: 0 !important;
+    left: 101%;
+}
+.sub-menu
+{
+    text-align: left;
+}
+#main_menu li .sub-menu li a
+{
+    font-size: 16px;
+}
+#main_menu li:hover > a
+{
+    background-color: rgb(247, 60, 39);
+    color: black;
+}
