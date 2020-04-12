@@ -176,12 +176,9 @@ const listOfGift = [
         minPrice:100000,
         maxPrice:500000,
         imageLink:"images/Books.jpg",
-        addressLink:["https://www.google.com/maps/place/Nh%C3%A0+S%C3%A1ch+C%C3%A1+Ch%C3%A9p/@21.0298249,105.8351451,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab98f6b819cb:0xa79daf2bad31165c!8m2!3d21.0298199!4d105.8373338",
-                     "https://www.google.com/maps/place/Nh%C3%A0+s%C3%A1ch+Ti%E1%BA%BFn+Th%E1%BB%8D/@20.9927458,105.8023597,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adae3b930961:0x46cd1bd64dc632cc!8m2!3d20.9927408!4d105.8045484",
-                     "https://www.google.com/maps/place/Nha%CC%80+sa%CC%81ch+Ti%C3%AA%CC%80n+Phong+Th%E1%BB%A7y+L%E1%BB%A3i/@21.0075241,105.8219004,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac819ba8aee5:0x9c7032b815901df8!8m2!3d21.0075191!4d105.8240891"],
-        shopInfo:[{name:"", address:"", link:""},
-                  {name:"", address:"", link:""},
-                  {name:"", address:"", link:""}]
+        shopInfo:[{name:"Nhà Sách Cá Chép", address:"115 Phố Nguyễn Thái Học, Văn Miếu, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Nh%C3%A0+S%C3%A1ch+C%C3%A1+Ch%C3%A9p/@21.0298199,105.8351451,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab98f6b819cb:0xa79daf2bad31165c!8m2!3d21.0298199!4d105.8373338"},
+                  {name:"Nhà sách Tiến Thọ", address:"424 Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Nh%C3%A0+s%C3%A1ch+Ti%E1%BA%BFn+Th%E1%BB%8D/@20.9927408,105.8023597,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adae3b930961:0x46cd1bd64dc632cc!8m2!3d20.9927408!4d105.8045484"},
+                  {name:"Nhà sách Tiền Phong", address:"Cổng trường Đại học Thủy Lợi, Tây Sơn, Trung Liệt, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Nha%CC%80+sa%CC%81ch+Ti%C3%AA%CC%80n+Phong+Th%E1%BB%A7y+L%E1%BB%A3i/@21.0075191,105.8219004,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac819ba8aee5:0x9c7032b815901df8!8m2!3d21.0075191!4d105.8240891"}]
      },
 
      {
@@ -192,12 +189,9 @@ const listOfGift = [
         minPrice:300000,
         maxPrice:600000,
         imageLink:"images/Cake.jpg",
-        addressLink:["https://www.google.com/maps/place/Thu+Huong+Bakery/@21.014293,105.8495911,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8cdb2c4133:0x41cb97f653d653f0!8m2!3d21.014288!4d105.8517798",
-                     "https://www.google.com/maps/place/Anh+Hoa+Bakery/@21.0126828,105.8098494,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab6219ce9d31:0x504bc25eaf2a87dc!8m2!3d21.0126778!4d105.8120381",
-                     "https://www.google.com/maps/place/Paris+Gateaux/@21.0267993,105.8210484,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab76b2263f41:0x776275d3a1a2e0ce!8m2!3d21.0267943!4d105.8232371"],
-        shopInfo:[{name:"", address:"", link:""},
-                  {name:"", address:"", link:""},
-                  {name:"", address:"", link:""}]    
+        shopInfo:[{name:"Thu Huong Bakery", address:"149 Huế, Ngô Thì Nhậm, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Thu+Huong+Bakery/@21.014288,105.8495911,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8cdb2c4133:0x41cb97f653d653f0!8m2!3d21.014288!4d105.8517798"},
+                  {name:"Anh Hoa Bakery", address:"Số 78 Láng Hạ, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Anh+Hoa+Bakery/@21.0126778,105.8098494,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab6219ce9d31:0x504bc25eaf2a87dc!8m2!3d21.0126778!4d105.8120381"},
+                  {name:"Paris Gateaux", address:"124-144 Phố Giảng Võ, Giảng Võ, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/Paris+Gateaux/@21.0267943,105.8210484,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab76b2263f41:0x776275d3a1a2e0ce!8m2!3d21.0267943!4d105.8232371"}]    
      },
 
      {
@@ -208,12 +202,9 @@ const listOfGift = [
         minPrice:40000,
         maxPrice:70000,
         imageLink:"images/MilkTea.jpg",
-        addressLink:["https://www.google.com/maps/place/Gong+Cha+Giang+Vo/@21.0267993,105.8210484,17z/data=!4m5!3m4!1s0x3135ab71386706ef:0x34182b5ecfb04382!8m2!3d21.0257056!4d105.8218591",
-                     "https://www.google.com/maps/place/Ding+Tea/@21.019385,105.8255609,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab783787f37b:0xcbf842191c32c548!8m2!3d21.01938!4d105.8277496",
-                     "https://www.google.com/maps/place/The+Alley+Milktea/@21.0147506,105.7990979,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9eb3a3ba0d:0x3e3e08a0ee47c26e!8m2!3d21.0147456!4d105.8012866"],
-        shopInfo:[{name:"", address:"", link:""},
-                  {name:"", address:"", link:""},
-                  {name:"", address:"", link:""}]     
+        shopInfo:[{name:"Gong Cha", address:"D2 Phố Giảng Võ, Giảng Võ, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/Gong+Cha+Giang+Vo/@21.0267993,105.8210484,17z/data=!4m5!3m4!1s0x3135ab71386706ef:0x34182b5ecfb04382!8m2!3d21.0257056!4d105.8218591"},
+                  {name:"Ding Tea", address:"82-84 Ô Chợ Dừa, Chợ Dừa, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Ding+Tea/@21.01938,105.8255609,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab783787f37b:0xcbf842191c32c548!8m2!3d21.01938!4d105.8277496"},
+                  {name:"The Alley", address:"23 Trung Hòa, Trung Hoà, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/The+Alley+Milktea/@21.0147456,105.7990979,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9eb3a3ba0d:0x3e3e08a0ee47c26e!8m2!3d21.0147456!4d105.8012866"}]     
      },
 
      {
@@ -224,12 +215,9 @@ const listOfGift = [
         minPrice:200000,
         maxPrice:500000,
         imageLink:"images/Chocolate.jpg",
-        addressLink:["https://www.google.com/maps/place/Mama+Chocolate/@21.044984,105.8029691,17z/data=!4m5!3m4!1s0x3135ab3d5a7241c9:0x5cf5173772f4c44d!8m2!3d21.044984!4d105.8051578",
-                     "https://www.google.com/maps/place/Sweeties+Chocolate+Shop+@+Vincom+Ha+Noi/@21.0115011,105.8471571,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8c5d95f0c9:0x4a8c3defb00d4ea4!8m2!3d21.0115011!4d105.8493458",
-                     "https://www.google.com/maps/place/D'art+Chocolate/@21.0309099,105.8537675,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf2a33203a5:0x11b44e68404c94e9!8m2!3d21.0309099!4d105.8559562"],
-        shopInfo:[{name:"", address:"", link:""},
-                  {name:"", address:"", link:""},
-                  {name:"", address:"", link:""}]
+        shopInfo:[{name:"Mama Chocolate", address:"24 Nguyễn Đình Hoàn, Nghĩa Đô, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/Mama+Chocolate/@21.044984,105.8029691,17z/data=!4m5!3m4!1s0x3135ab3d5a7241c9:0x5cf5173772f4c44d!8m2!3d21.044984!4d105.8051578"},
+                  {name:"Sweeties Chocolate ", address:"191 Ba Trieu, Le Dai Hanh, Hai Ba Trung, Hanoi", link:"https://www.google.com/maps/place/Sweeties+Chocolate+Shop+@+Vincom+Ha+Noi/@21.0115011,105.8471571,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8c5d95f0c9:0x4a8c3defb00d4ea4!8m2!3d21.0115011!4d105.8493458"},
+                  {name:"D'art Chocolate", address:"18A Hàng Vôi, Lý Thái Tổ, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/D'art+Chocolate/@21.0309099,105.8537675,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf2a33203a5:0x11b44e68404c94e9!8m2!3d21.0309099!4d105.8559562"}]
      },
 
      {
@@ -240,11 +228,8 @@ const listOfGift = [
         minPrice:1500000,
         maxPrice:3000000,
         imageLink:"images/Wine.jpg",
-        addressLink:["https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998451,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369",
-                     "https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146425,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159",
-                     "https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312433,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"],
-        shopInfo:[{name:"", address:"", link:""},
-                  {name:"", address:"", link:""},
-                  {name:"", address:"", link:""}]  
+        shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
+                  {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
+                  {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
      },
     ]
