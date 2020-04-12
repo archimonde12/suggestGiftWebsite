@@ -30,3 +30,15 @@ var slideIndex;
   function currentSlide(n) {
     showSlides(slideIndex = n)
    }
+
+//TOP menu
+var header = document.querySelector('#menu');
+	var origOffsetY = header.offsetTop;
+  origOffsetY = 680;
+  console.log(origOffsetY)
+	function onScroll(e) {
+		window.scrollY >= origOffsetY ? header.classList.add('sticky') :
+	                                  header.classList.remove('sticky');
+	}
+
+	document.addEventListener('scroll', onScroll);
