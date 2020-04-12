@@ -19,6 +19,7 @@
 }
 .Back{
     animation: zoomlen 65s forwards;
+    overflow: hidden;
 }
 @-webkit-keyframes zoomlen{
     from{transform:scale(1) ;}
