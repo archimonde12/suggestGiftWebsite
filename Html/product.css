@@ -1,0 +1,97 @@
+*{margin: 0;padding: 0;}
+.nho{
+    background-color: white;
+    color: #000000;
+    padding: 7px;
+    transition: 0.4s;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.nho:last-child{
+    background-color:rgb(241, 107, 58);
+}
+.nho:hover{
+    background-color: rgb(241, 107, 58);
+    color: white;
+    transition: 0.4s;
+}
+img{
+    width: 275px;
+    height: 325px;
+}
+.father{
+    width: 275px;
+    height: 325px;
+    position: relative;
+}
+.father .layer1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.father .backgroud{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 275px;
+    height: 323px;
+    background-color: rgba(255, 255, 255, 0.445);
+    border-bottom:2px solid orangered ;
+    background-image:-webkit-linear-gradient(45deg,#f7c6264d 15%,#f68c2f6e 40%,#e5127d63 85%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.father:hover .backgroud{
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.father .icons{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 3;
+    width: 270px;
+    height: 30px;
+    text-align: center;
+    margin-top: -15px;
+    transform: scale(0);
+}
+.father:hover .icons{
+    transition: 0.4s;
+    transform: scale(1);
+    transition-delay: 0.4s;
+}
+.duoi
+{
+    text-align: center;
+    width: 270px;
+    margin-top: 10px;
+}
+#linkshop
+{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.giamgia{
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.gia
+{
+    font-size: 15px;
+    color: orangered;;
+}
+#linkshop:hover{
+    text-decoration: none;
+    color: tomato;
+}
+#thongtin
+{
+    display: none;
+}
