@@ -78,7 +78,7 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Shoes",
+        nameOfGift:"Shoes",//giày
         genderSuits:"both",
         situationSuits:"AllEvents",
         characteristicsSuits:"Clothes",
@@ -91,7 +91,7 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"HighHeels",
+        nameOfGift:"HighHeels",//giày cao gót
         genderSuits:"female",
         situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
         characteristicsSuits:["Clothes"],
@@ -104,7 +104,7 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Watch",
+        nameOfGift:"Watch",//đồng hồ
         genderSuits:"both",
         situationSuits:["christmas", "birthday", "anniversary"],
         characteristicsSuits:"Accessories",
@@ -117,7 +117,7 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Fragrance",
+        nameOfGift:"Fragrance", //nuoc hoa
         genderSuits:"both",
         situationSuits:"AllEvents",
         characteristicsSuits:"Accessories",
@@ -232,4 +232,108 @@ const listOfGift = [
                   {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
                   {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
      },
-    ]
+     ////aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+     {
+      nameOfGift:"Tie",
+      genderSuits:"male",
+      situationSuits:["christmas", "birthday", "anniversary"],
+      characteristicsSuits:"Accessories",
+      minPrice:200000,
+      maxPrice:1000000,
+      imageLink:"images\Tie.jpg",
+      shopInfo:[{name:"Adam Store", address:"82 Huế, Phố Huế, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Adam+Store/@21.0129425,105.8496663,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8d3ed37a2f:0x9d6f0b2cc2eec918!8m2!3d21.0129375!4d105.851855"},
+                {name:"Cavat Hà Nội", address:"Số 16 Ngõ Hòa Bình 4, Minh Khai, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%A0+V%E1%BA%A1t+Nam+,+Cavat+H%C3%A0+N%E1%BB%99i/@20.9951308,105.8457484,15z/data=!4m8!1m2!2m1!1zY8OgIHbhuqF0IG5hbSBow6AgbuG7mWk!3m4!1s0x3135ad73c1aab2d5:0xeb34acf69745eea1!8m2!3d20.995227!4d105.854097"},
+                {name:"REMMY", address:"Số 2 Nguyễn Du, Hàng Bài, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/REMMY/@21.0184385,105.8491455,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abfea878220b:0x7f46382efad421fc!8m2!3d21.0184335!4d105.8513342"}]  
+   },
+   
+   {
+      nameOfGift:"Belt",
+      genderSuits:"male",
+      situationSuits:["christmas", "birthday", "anniversary"],
+      characteristicsSuits:"Accessories",
+      minPrice:300000,
+      maxPrice:1000000,
+      imageLink:"images\Belt.jpg",
+      shopInfo:[{name:"Adam Store", address:"82 Huế, Phố Huế, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Adam+Store/@21.0129425,105.8496663,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8d3ed37a2f:0x9d6f0b2cc2eec918!8m2!3d21.0129375!4d105.851855"},
+                {name:"Laforce", address:"158 Thái Hà, Đống Đa, Hà Nội, Hà Nội", link:"https://www.google.com/maps/place/Leather+furniture+Laforce/@21.01314,105.8177683,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7d01bdcf5b:0x2951f6c5aecd8735!8m2!3d21.013135!4d105.819957"},
+                {name:"Tâm Anh Shop", address:"86 Đường Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/T%C3%A2m+Anh+Shop/@21.031299,105.7981143,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab413713b73b:0x3ae0b8e73a0174f2!8m2!3d21.031294!4d105.800303"}]  
+   },
+   
+   {
+      nameOfGift:"Wallet",
+      genderSuits:"male",
+      situationSuits:["christmas", "birthday", "anniversary"],
+      characteristicsSuits:"Accessories",
+      minPrice:400000,
+      maxPrice:1500000,
+      imageLink:"images\Wallet.jpg",
+      shopInfo:[{name:"EFORA", address:"458 Phố Minh Khai, Mai Động, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Efora/@20.9930356,105.8671667,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac1b44afe451:0xd230c0ff56ce3704!8m2!3d20.9930306!4d105.8693554"},
+                {name:"Laforce", address:"158 Thái Hà, Đống Đa, Hà Nội, Hà Nội", link:"https://www.google.com/maps/place/Leather+furniture+Laforce/@21.01314,105.8177683,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7d01bdcf5b:0x2951f6c5aecd8735!8m2!3d21.013135!4d105.819957"},
+                {name:"Tâm Anh Shop", address:"86 Đường Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/T%C3%A2m+Anh+Shop/@21.031299,105.7981143,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab413713b73b:0x3ae0b8e73a0174f2!8m2!3d21.031294!4d105.800303"}]  
+   },
+   
+   {
+      nameOfGift:"Hat",
+      genderSuits:"both",
+      situationSuits:["christmas", "birthday"],
+      characteristicsSuits:"Accessories",
+      minPrice:500000,
+      maxPrice:1000000,
+      imageLink:"images\Hat.jpg",
+      shopInfo:[{name:"KayyStore", address:"97 Đào Tấn, Ngọc Khánh, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/KayyStore/@21.0335237,105.8039185,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab38f63bec7d:0x21b84f7ae0763b76!8m2!3d21.0335187!4d105.8061072"},
+                {name:"BLackShop", address:"473 Ngõ 192 - Lê Trọng Tấn, Định Công, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/BLackShop+-+Expert+Caps,+snapback+hats+beautiful/@20.9848317,105.8220237,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acf4ed2a5b85:0xf3439f276f68d229!8m2!3d20.9848267!4d105.8242124"},
+                {name:"Nón Sơn", address:"236 Hàng Bông, Cửa Nam, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/N%C3%B3n+S%C6%A1n/@21.02826,105.8409763,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9707002417:0x129c39ed0f52f1b7!8m2!3d21.028255!4d105.843165"}]  
+   },
+
+   {
+      nameOfGift:"Purse",
+      genderSuits:"female",
+      situationSuits:["christmas", "birthday", "anniversary", "8/3","20/10"],
+      characteristicsSuits:"Accessories",
+      minPrice:2500000,
+      maxPrice:5000000,
+      imageLink:"images\Hat.jpg",
+      shopInfo:[{name:"CHARLES & KEITH", address:"Vincom Center, 54A Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/CHARLES+%26+KEITH/@21.0271101,105.8019804,14z/data=!4m8!1m2!2m1!1scharles+%26+keith!3m4!1s0x3135ab68842d505d:0x1dbff2abf4c8cebd!8m2!3d21.0235358!4d105.8088928"},
+                {name:"Pedro", address:"119 Trần Duy Hưng, Trung Hoà, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Pedro+Vincom+Tr%E1%BA%A7n+Duy+H%C6%B0ng/@21.00511,105.7920443,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adf9622175fb:0xa00fa560ad2223fa!8m2!3d21.00511!4d105.794233"},
+                {name:"Furla", address:"191 Bà Triệu, Lê Đại Hành, Hà Nội, Vietnam", link:"https://www.google.com/maps/place/Furla/@21.0113686,105.8471059,17z/data=!3m2!4b1!5s0x3135ab8ba7e8fd91:0xcf7ee1e594a5bec2!4m5!3m4!1s0x3135ab8ba71d3d7f:0x1fec213e84037adf!8m2!3d21.0113636!4d105.8492946"}]  
+   },
+
+   {
+      nameOfGift:"Smartphone",
+      genderSuits:"both",
+      situationSuits:["christmas", "birthday"],
+      characteristicsSuits:"Electronic",
+      minPrice:4000000,
+      maxPrice:30000000,
+      imageLink:"images\Smartphone.jpg",
+      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
+                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
+                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+   },
+
+   {
+      nameOfGift:"Wine",
+      genderSuits:"male",
+      situationSuits:["christmas", "birthday", "anniversary"],
+      characteristicsSuits:"Food",
+      minPrice:1500000,
+      maxPrice:3000000,
+      imageLink:"images/Wine.jpg",
+      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
+                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
+                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+   },
+
+   {
+      nameOfGift:"Wine",
+      genderSuits:"male",
+      situationSuits:["christmas", "birthday", "anniversary"],
+      characteristicsSuits:"Food",
+      minPrice:1500000,
+      maxPrice:3000000,
+      imageLink:"images/Wine.jpg",
+      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
+                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
+                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+   },
+   ]
