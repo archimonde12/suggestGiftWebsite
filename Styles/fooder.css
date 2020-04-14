@@ -1,0 +1,29 @@
+*{margin: 0;padding: 0;}
+.topfooder {
+    background: salmon;
+    padding: 12px;
+    color: white;
+}
+.row > .col-sm-4
+{
+    text-align: center;
+}
+
+.centerfooder
+{
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid rgb(129, 128, 128) ;
+    padding: 20px 0 20px 0;
+}
+.bottomfooder
+{
+    background-color: black;
+    color: white;
+    padding: 12px 0 12px 0;
+}
+.iconTOP
+{
+    display: inline-block;
+    float: left;
+}
