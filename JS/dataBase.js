@@ -2,6 +2,8 @@ const listOfGift = [
    {
       nameOfGift:"Lipstick",
       genderSuits:"female",
+      vietnameseName:"Son",
+      relationShips:["Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
       situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
       characteristicsSuits:"Cosmetics",
       minPrice:200000,
@@ -16,6 +18,8 @@ const listOfGift = [
     {
        nameOfGift:"SkinCare",
        genderSuits:"female",
+       vietnameseName:"Dưỡng da",
+       relationShips:["Mother", "Girlfriend", "Wife", "Relatives", "Boss", "Co-worker"],
        situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
        characteristicsSuits:"Cosmetics",
        minPrice:400000,
@@ -29,6 +33,8 @@ const listOfGift = [
     {
        nameOfGift:"FacialMask",
        genderSuits:"female",
+       vietnameseName:"Mặt nạ",
+       relationShips:["Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
        situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
        characteristicsSuits:"Cosmetics",
        minPrice:300000,
@@ -42,6 +48,8 @@ const listOfGift = [
     {
        nameOfGift:"FacialPowder",
        genderSuits:"female",
+       vietnameseName:"Phấn trang điểm",
+       relationShips:["Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
        situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
        characteristicsSuits:"Cosmetics",
        minPrice:50000,
@@ -54,6 +62,8 @@ const listOfGift = [
     {
         nameOfGift:"Shirts",
         genderSuits:"both",
+        vietnameseName:"Áo",
+        relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
         situationSuits:"AllEvents",
         characteristicsSuits:"Clothes",
         minPrice:50000,
@@ -67,6 +77,8 @@ const listOfGift = [
      {
         nameOfGift:"Skirts",
         genderSuits:"female",
+        vietnameseName:"Váy",
+        relationShips:["Mother", "Girlfriend", "Wife", "Relatives"],
         situationSuits:["8/3","20/10","christmas", "birthday"],
         characteristicsSuits:"Clothes",
         minPrice:300000,
@@ -78,8 +90,10 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Shoes",//giày
+        nameOfGift:"Shoes",
         genderSuits:"both",
+        vietnameseName:"Giày",
+        relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives"],
         situationSuits:"AllEvents",
         characteristicsSuits:"Clothes",
         minPrice:800000,
@@ -91,8 +105,10 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"HighHeels",//giày cao gót
+        nameOfGift:"HighHeels",
         genderSuits:"female",
+        vietnameseName:"Giày cao gót",
+        relationShips:["Mother", "Girlfriend", "Wife", "Relatives"],
         situationSuits:["valentine","8/3","20/10","christmas", "birthday"],
         characteristicsSuits:["Clothes"],
         minPrice:1500000,
@@ -104,8 +120,10 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Watch",//đồng hồ
+        nameOfGift:"Watch",
         genderSuits:"both",
+        vietnameseName:"Đồng hồ",
+        relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Boss"],
         situationSuits:["christmas", "birthday", "anniversary"],
         characteristicsSuits:"Accessories",
         minPrice:2000000,
@@ -117,8 +135,10 @@ const listOfGift = [
    },
 
      {
-        nameOfGift:"Fragrance", //nuoc hoa
+        nameOfGift:"Fragrance", 
         genderSuits:"both",
+        vietnameseName:"Nước hoa",
+        relationShips:["Boyfriend", "Husband", "Girlfriend", "Wife", "Relatives", "Co-worker"],
         situationSuits:"AllEvents",
         characteristicsSuits:"Accessories",
         minPrice:1000000,
@@ -132,6 +152,8 @@ const listOfGift = [
      {
         nameOfGift:"Bracelet",
         genderSuits:"both",
+        vietnameseName:"Vòng tay",
+        relationShips:["Boyfriend", "Husband", "Mother", "Girlfriend", "Wife"],
         situationSuits:["valentine", "anniversary"],
         characteristicsSuits:"Accessories",
         minPrice:200000,
@@ -145,6 +167,8 @@ const listOfGift = [
      {
         nameOfGift:"Ring",
         genderSuits:"female",
+        vietnameseName:"Nhẫn",
+        relationShips:["Mother", "Girlfriend", "Wife"],
         situationSuits:["valentine" , "anniversary"],
         characteristicsSuits:"Accessories",
         minPrice:1000000,
@@ -158,8 +182,10 @@ const listOfGift = [
      {
         nameOfGift:"Flowers",
         genderSuits:"female",
+        vietnameseName:"Hoa",
+        relationShips:["Mother", "Girlfriend", "Wife", "Boss"],
         situationSuits:["valentine","8/3","20/10", "birthday", "anniversary"],
-        characteristicsSuits:"SimpleGift",
+        characteristicsSuits:"Gift",
         minPrice:200000,
         maxPrice:1000000,
         imageLink:"images/Flowers.jpg",
@@ -171,8 +197,10 @@ const listOfGift = [
      {
         nameOfGift:"Books",
         genderSuits:"both",
+        vietnameseName:"Sách",
+        relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
         situationSuits:"AllEvents",
-        characteristicsSuits:"SimpleGift",
+        characteristicsSuits:"Gift",
         minPrice:100000,
         maxPrice:500000,
         imageLink:"images/Books.jpg",
@@ -184,6 +212,8 @@ const listOfGift = [
      {
         nameOfGift:"Cake",
         genderSuits:"both",
+        vietnameseName:"Bánh Gato",
+        relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Boss", "Co-worker"],
         situationSuits:["birthday", "christmas", "anniversary"],
         characteristicsSuits:"Food",
         minPrice:300000,
@@ -197,6 +227,8 @@ const listOfGift = [
      {
         nameOfGift:"MilkTea",
         genderSuits:"both",
+        vietnameseName:"Trà sữa",
+        relationShips:["Boyfriend", "Girlfriend", "Relatives", "Co-worker"],
         situationSuits:"AllEvents",
         characteristicsSuits:"Food",
         minPrice:40000,
@@ -210,6 +242,8 @@ const listOfGift = [
      {
         nameOfGift:"Chocolate",
         genderSuits:"both",
+        vietnameseName:"Socola",
+        relationShips:["Boyfriend", "Husband", "Girlfriend", "Wife"],
         situationSuits:["valentine", "christmas"],
         characteristicsSuits:"Food",
         minPrice:200000,
@@ -223,6 +257,8 @@ const listOfGift = [
      {
         nameOfGift:"Wine",
         genderSuits:"male",
+        vietnameseName:"Rượu",
+        relationShips:["Father", "Husband", "Relatives", "Boss", "Co-worker"],
         situationSuits:["christmas", "birthday", "anniversary"],
         characteristicsSuits:"Food",
         minPrice:1500000,
@@ -232,15 +268,17 @@ const listOfGift = [
                   {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
                   {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
      },
-     ////aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
      {
       nameOfGift:"Tie",
       genderSuits:"male",
+      vietnameseName:"Cavat",
+      relationShips:["Father", "Husband", "Relatives", "Boss", "Co-worker"],
       situationSuits:["christmas", "birthday", "anniversary"],
       characteristicsSuits:"Accessories",
       minPrice:200000,
       maxPrice:1000000,
-      imageLink:"images\Tie.jpg",
+      imageLink:"images/Tie.jpg",
       shopInfo:[{name:"Adam Store", address:"82 Huế, Phố Huế, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Adam+Store/@21.0129425,105.8496663,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8d3ed37a2f:0x9d6f0b2cc2eec918!8m2!3d21.0129375!4d105.851855"},
                 {name:"Cavat Hà Nội", address:"Số 16 Ngõ Hòa Bình 4, Minh Khai, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%A0+V%E1%BA%A1t+Nam+,+Cavat+H%C3%A0+N%E1%BB%99i/@20.9951308,105.8457484,15z/data=!4m8!1m2!2m1!1zY8OgIHbhuqF0IG5hbSBow6AgbuG7mWk!3m4!1s0x3135ad73c1aab2d5:0xeb34acf69745eea1!8m2!3d20.995227!4d105.854097"},
                 {name:"REMMY", address:"Số 2 Nguyễn Du, Hàng Bài, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/REMMY/@21.0184385,105.8491455,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abfea878220b:0x7f46382efad421fc!8m2!3d21.0184335!4d105.8513342"}]  
@@ -249,11 +287,13 @@ const listOfGift = [
    {
       nameOfGift:"Belt",
       genderSuits:"male",
+      vietnameseName:"Thắt lưng",
+      relationShips:["Father", "Boyfriend", "Husband", "Relatives", "Boss", "Co-worker"],
       situationSuits:["christmas", "birthday", "anniversary"],
       characteristicsSuits:"Accessories",
       minPrice:300000,
       maxPrice:1000000,
-      imageLink:"images\Belt.jpg",
+      imageLink:"images/Belt.jpg",
       shopInfo:[{name:"Adam Store", address:"82 Huế, Phố Huế, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Adam+Store/@21.0129425,105.8496663,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8d3ed37a2f:0x9d6f0b2cc2eec918!8m2!3d21.0129375!4d105.851855"},
                 {name:"Laforce", address:"158 Thái Hà, Đống Đa, Hà Nội, Hà Nội", link:"https://www.google.com/maps/place/Leather+furniture+Laforce/@21.01314,105.8177683,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7d01bdcf5b:0x2951f6c5aecd8735!8m2!3d21.013135!4d105.819957"},
                 {name:"Tâm Anh Shop", address:"86 Đường Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/T%C3%A2m+Anh+Shop/@21.031299,105.7981143,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab413713b73b:0x3ae0b8e73a0174f2!8m2!3d21.031294!4d105.800303"}]  
@@ -262,11 +302,13 @@ const listOfGift = [
    {
       nameOfGift:"Wallet",
       genderSuits:"male",
+      vietnameseName:"Ví",
+      relationShips:["Father", "Boyfriend", "Husband"],
       situationSuits:["christmas", "birthday", "anniversary"],
       characteristicsSuits:"Accessories",
       minPrice:400000,
       maxPrice:1500000,
-      imageLink:"images\Wallet.jpg",
+      imageLink:"images/Wallet.jpg",
       shopInfo:[{name:"EFORA", address:"458 Phố Minh Khai, Mai Động, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Efora/@20.9930356,105.8671667,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac1b44afe451:0xd230c0ff56ce3704!8m2!3d20.9930306!4d105.8693554"},
                 {name:"Laforce", address:"158 Thái Hà, Đống Đa, Hà Nội, Hà Nội", link:"https://www.google.com/maps/place/Leather+furniture+Laforce/@21.01314,105.8177683,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7d01bdcf5b:0x2951f6c5aecd8735!8m2!3d21.013135!4d105.819957"},
                 {name:"Tâm Anh Shop", address:"86 Đường Cầu Giấy, Quan Hoa, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/T%C3%A2m+Anh+Shop/@21.031299,105.7981143,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab413713b73b:0x3ae0b8e73a0174f2!8m2!3d21.031294!4d105.800303"}]  
@@ -275,11 +317,13 @@ const listOfGift = [
    {
       nameOfGift:"Hat",
       genderSuits:"both",
+      vietnameseName:"Mũ",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Co-worker"],
       situationSuits:["christmas", "birthday"],
       characteristicsSuits:"Accessories",
       minPrice:500000,
       maxPrice:1000000,
-      imageLink:"images\Hat.jpg",
+      imageLink:"images/Hat.jpg",
       shopInfo:[{name:"KayyStore", address:"97 Đào Tấn, Ngọc Khánh, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/KayyStore/@21.0335237,105.8039185,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab38f63bec7d:0x21b84f7ae0763b76!8m2!3d21.0335187!4d105.8061072"},
                 {name:"BLackShop", address:"473 Ngõ 192 - Lê Trọng Tấn, Định Công, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/BLackShop+-+Expert+Caps,+snapback+hats+beautiful/@20.9848317,105.8220237,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acf4ed2a5b85:0xf3439f276f68d229!8m2!3d20.9848267!4d105.8242124"},
                 {name:"Nón Sơn", address:"236 Hàng Bông, Cửa Nam, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/N%C3%B3n+S%C6%A1n/@21.02826,105.8409763,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9707002417:0x129c39ed0f52f1b7!8m2!3d21.028255!4d105.843165"}]  
@@ -288,11 +332,13 @@ const listOfGift = [
    {
       nameOfGift:"Purse",
       genderSuits:"female",
+      vietnameseName:"Ví nữ",
+      relationShips:["Mother", "Girlfriend", "Wife", "Relatives"],
       situationSuits:["christmas", "birthday", "anniversary", "8/3","20/10"],
       characteristicsSuits:"Accessories",
       minPrice:2500000,
       maxPrice:5000000,
-      imageLink:"images\Hat.jpg",
+      imageLink:"images/Hat.jpg",
       shopInfo:[{name:"CHARLES & KEITH", address:"Vincom Center, 54A Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/CHARLES+%26+KEITH/@21.0271101,105.8019804,14z/data=!4m8!1m2!2m1!1scharles+%26+keith!3m4!1s0x3135ab68842d505d:0x1dbff2abf4c8cebd!8m2!3d21.0235358!4d105.8088928"},
                 {name:"Pedro", address:"119 Trần Duy Hưng, Trung Hoà, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Pedro+Vincom+Tr%E1%BA%A7n+Duy+H%C6%B0ng/@21.00511,105.7920443,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adf9622175fb:0xa00fa560ad2223fa!8m2!3d21.00511!4d105.794233"},
                 {name:"Furla", address:"191 Bà Triệu, Lê Đại Hành, Hà Nội, Vietnam", link:"https://www.google.com/maps/place/Furla/@21.0113686,105.8471059,17z/data=!3m2!4b1!5s0x3135ab8ba7e8fd91:0xcf7ee1e594a5bec2!4m5!3m4!1s0x3135ab8ba71d3d7f:0x1fec213e84037adf!8m2!3d21.0113636!4d105.8492946"}]  
@@ -301,39 +347,105 @@ const listOfGift = [
    {
       nameOfGift:"Smartphone",
       genderSuits:"both",
+      vietnameseName:"Điện thoại",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives"],
       situationSuits:["christmas", "birthday"],
       characteristicsSuits:"Electronic",
       minPrice:4000000,
       maxPrice:30000000,
-      imageLink:"images\Smartphone.jpg",
-      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
-                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
-                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+      imageLink:"images/Smartphone.jpg",
+      shopInfo:[{name:"Cellphone S", address:"21 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Cellphone+S+-+21+Th%C3%A1i+H%C3%A0/@21.0134098,105.8172136,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7ce2c036cf:0x724c1e25fed4bd09!8m2!3d21.0134048!4d105.8194023"},
+                {name:"FPT Shop", address:"216 Thái Hà, Trung Liệt, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/FPT+Shop/@21.0139649,105.8169794,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7ce695b175:0x2ce421dd9fc922e5!8m2!3d21.0139599!4d105.8191681"},
+                {name:"Thế Giới Di Động", address:"60 Đại Cồ Việt, Lê Đại Hành, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Th%E1%BA%BF+Gi%E1%BB%9Bi+Di+%C4%90%E1%BB%99ng/@21.008367,105.8454753,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8a0e15270b:0x81addb4c0fde9246!8m2!3d21.008362!4d105.847664"}]  
    },
 
    {
-      nameOfGift:"Wine",
-      genderSuits:"male",
-      situationSuits:["christmas", "birthday", "anniversary"],
-      characteristicsSuits:"Food",
-      minPrice:1500000,
-      maxPrice:3000000,
-      imageLink:"images/Wine.jpg",
-      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
-                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
-                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+      nameOfGift:"Tablet",
+      genderSuits:"both",
+      vietnameseName:"Máy tính bảng",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Boss"],
+      situationSuits:["christmas", "birthday"],
+      characteristicsSuits:"Electronic",
+      minPrice:7000000,
+      maxPrice:20000000,
+      imageLink:"images/Tablet.jpg",
+      shopInfo:[{name:"Cellphone S", address:"21 Thái Hà, P. Trung Liệt, Q. Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Cellphone+S+-+21+Th%C3%A1i+H%C3%A0/@21.0134098,105.8172136,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7ce2c036cf:0x724c1e25fed4bd09!8m2!3d21.0134048!4d105.8194023"},
+                {name:"FPT Shop", address:"216 Thái Hà, Trung Liệt, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/FPT+Shop/@21.0139649,105.8169794,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab7ce695b175:0x2ce421dd9fc922e5!8m2!3d21.0139599!4d105.8191681"},
+                {name:"Thế Giới Di Động", address:"60 Đại Cồ Việt, Lê Đại Hành, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Th%E1%BA%BF+Gi%E1%BB%9Bi+Di+%C4%90%E1%BB%99ng/@21.008367,105.8454753,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab8a0e15270b:0x81addb4c0fde9246!8m2!3d21.008362!4d105.847664"}]  
    },
 
    {
-      nameOfGift:"Wine",
-      genderSuits:"male",
-      situationSuits:["christmas", "birthday", "anniversary"],
+      nameOfGift:"Cookies",
+      genderSuits:"both",
+      vietnameseName:"Bánh kẹo",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Boss", "Co-worker"],
+      situationSuits:["christmas", "birthday", "tet"],
       characteristicsSuits:"Food",
-      minPrice:1500000,
-      maxPrice:3000000,
-      imageLink:"images/Wine.jpg",
-      shopInfo:[{name:"Foreign Hanoi Liquor Stores", address:"247 Hoàng Văn Thái, Khương Trung, Thanh Xuân, Hà Nội", link:"https://www.google.com/maps/place/Foreign+Hanoi+Liquor+Stores/@20.998446,105.8189482,17z/data=!3m1!4b1!4m5!3m4!1s0x317528b2ec88d235:0xc117ac5c5e24240a!8m2!3d20.998446!4d105.8211369"},
-                {name:"Công ty Cồn rượu Hà Nội", address:"94 Lò Đúc, Phạm Đình Hổ, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+ty+C%E1%BB%93n+r%C6%B0%E1%BB%A3u+H%C3%A0+N%E1%BB%99i/@21.0146375,105.8548272,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf3c7423fb7:0xfb78234a7600f2ff!8m2!3d21.0146375!4d105.8570159"},
-                {name:"Shop Rượu Hùng Ánh", address:"1 Hàng Da, Cửa Đông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Shop+R%C6%B0%E1%BB%A3u+H%C3%B9ng+%C3%81nh/@21.0312383,105.8444186,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abbe00906a4b:0xd3110f0b842b6c39!8m2!3d21.0312383!4d105.8466073"}]  
+      minPrice:200000,
+      maxPrice:600000,
+      imageLink:"images/Cookies.jpg",
+      shopInfo:[{name:"Cửa hàng Bách Linh", address:"33 Thợ Nhuộm, Hàng Bông, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/C%C3%B4ng+Ty+Tnhh+B%C3%A1ch+Linh/@21.0279047,105.8422583,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab94dba3a24d:0x9cd8e44065edf42f!8m2!3d21.0278997!4d105.844447"},
+                {name:"Occident Mart", address:"T6 Times City Building, SO - 05A, Phố Minh Khai, Vĩnh Phú, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Occident+Mart/@20.9959276,105.8666875,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac04c388a0bd:0x2903406ab5c2d7cc!8m2!3d20.9959226!4d105.8688762"},
+                {name:"LOTTE Mart", address:"Lotte Center Hanoi, 54 Liễu Giai, Cống Vị, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/LOTTE+Mart/@21.007659,105.767101,13z/data=!4m8!1m2!2m1!1slotte+mart!3m4!1s0x3135ab6c93b61439:0x6a6bc262254f572f!8m2!3d21.0321757!4d105.8124268"}]  
+   },
+
+   {
+      nameOfGift:"Tickets",
+      genderSuits:"both",
+      vietnameseName:"Vé du lịch",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives"],
+      situationSuits:["christmas", "birthday", "anniversary", "tet"],
+      characteristicsSuits:"Gift",
+      minPrice:10000000,
+      maxPrice:40000000,
+      imageLink:"images/Tickets.jpg",
+      shopInfo:[{name:"Viettravel", address:"3 Hai Bà Trưng, Phan Chu Trinh, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/Vietravel+Hanoi/@21.022971,105.8546502,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abd2a4f1a4af:0x510d5ca52c9844bb!8m2!3d21.022966!4d105.8568389"},
+                {name:"BestPrice Travel", address:"12 Ngõ Bà Triệu, Lê Đại Hành, Hai Ba Trung Dist, Hà Nội", link:"https://www.google.com/maps/place/BestPrice+Travel/@21.012847,105.8462133,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac6c2cc7ac69:0x5ce29006574d093d!8m2!3d21.012842!4d105.848402"},
+                {name:"Tổng Công Ty Du Lịch Hà Nội", address:"Số 18 Lý Thường Kiệt, Phan Chu Trinh, Hoàn Kiếm, Hà Nội", link:"https://www.google.com/maps/place/T%E1%BB%95ng+C%C3%B4ng+Ty+Du+L%E1%BB%8Bch+H%C3%A0+N%E1%BB%99i/@21.0219917,105.8532869,17z/data=!3m1!4b1!4m5!3m4!1s0x3135abf17e3a68db:0xec2f817ebf13c2f2!8m2!3d21.0219867!4d105.8554756"}]  
+   },
+
+   {
+      nameOfGift:"Pottery",
+      genderSuits:"both",
+      vietnameseName:"Đồ gốm sứ",
+      relationShips:["Father",  "Mother", "Relatives", "Boss"],
+      situationSuits:["christmas", "birthday", "anniversary", "tet"],
+      characteristicsSuits:"Gift",
+      minPrice:3000000,
+      maxPrice:20000000,
+      imageLink:"images/Pottery.jpg",
+      shopInfo:[{name:"Gốm Sứ Bát Tràng", address:"Bát Tràng, Gia Lâm, Gia Lâm Hà Nội", link:"https://www.google.com/maps/place/G%E1%BB%91m+S%E1%BB%A9+B%C3%A1t+Tr%C3%A0ng/@20.9773841,105.9114339,17z/data=!3m1!4b1!4m5!3m4!1s0x3135aee79afe4a13:0xd8b249d1178f40b!8m2!3d20.9773791!4d105.9136226"},
+                {name:"Ceramics Minh Quang", address:"251 Giang Cao, Bát Tràng, Gia Lâm, Hà Nội", link:"https://www.google.com/maps/place/Ceramics+Minh+Quang/@20.9783439,105.9110115,17z/data=!3m1!4b1!4m5!3m4!1s0x3135aedc0415070d:0xf209d935315771fa!8m2!3d20.9783389!4d105.9132002"},
+                {name:"Gốm Sứ Vạn An Lộc ", address:"Xóm 3, Thôn, Bát Tràng, Gia Lâm, Hà Nội", link:"https://www.google.com/maps/place/G%E1%BB%91m+S%E1%BB%A9+V%E1%BA%A1n+An+L%E1%BB%99c+-+B%C3%A1t+Tr%C3%A0ng/@20.9762076,105.9098297,17z/data=!3m1!4b1!4m5!3m4!1s0x3135af4623cb43fd:0xf1911a2ebed9b11c!8m2!3d20.9762026!4d105.9120184"}]  
+   },
+
+   {
+      nameOfGift:"Pet",
+      genderSuits:"both",
+      vietnameseName:"Thú nuôi",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives",],
+      situationSuits:["christmas", "birthday"],
+      characteristicsSuits:"Gift",
+      minPrice:4000000,
+      maxPrice:20000000,
+      imageLink:"images/Pet.jpg",
+      shopInfo:[{name:"Pet Mart", address:"3 Đại Cồ Việt, Lê Đại Hành, Hai Bà Trưng, Hà Nội", link:"https://www.google.com/maps/place/Pet+Mart+%C4%90%E1%BA%A1i+C%E1%BB%93+Vi%E1%BB%87t+-+C%E1%BB%ADa+H%C3%A0ng+Th%C3%BA+C%C6%B0ng/@21.008496,105.8490824,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab2efcc686d5:0xc5f3b6c4719b4a3e!8m2!3d21.008491!4d105.8512711"},
+                {name:"Lolipet", address:"số 10/10, ngõ 45 Nguyên Hồng, Láng Hạ, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Lolipet+Petshop/@21.0175565,105.8094352,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab6d835af2cd:0x7ae22c01ff41b64c!8m2!3d21.0175515!4d105.8116239"},
+                {name:"Kún Miu Pet", address:"135 An Trạch, Chợ Dừa, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/K%C3%BAn+Miu+Pet+shop+%26+Grooming/@21.0273827,105.826609,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab9e10fe01f9:0xb508a3b55d30f8e6!8m2!3d21.0273777!4d105.8287977"}]  
+   },
+
+   {
+      nameOfGift:"Plant",
+      genderSuits:"both",
+      vietnameseName:"Cây cảnh",
+      relationShips:["Father", "Boyfriend", "Husband", "Mother", "Girlfriend", "Wife", "Relatives", "Boss", "Co-worker"],
+      situationSuits:["christmas", "birthday", "tet"],
+      characteristicsSuits:"Gift",
+      minPrice:100000,
+      maxPrice:2000000,
+      imageLink:"images/Plant.jpg",
+      shopInfo:[{name:"Cây cảnh Hà Nội", address:"628 Hoàng Hoa Thám, Bưởi, Ba Đình, Hà Nội", link:"https://www.google.com/maps/place/C%C3%A2y+c%E1%BA%A3nh+H%C3%A0+N%E1%BB%99i+-+C%C6%A1+s%E1%BB%9F+2/@21.0471035,105.8071371,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab0150cd0979:0x193dfe49ae0d2ff2!8m2!3d21.0470985!4d105.8093258"},
+                {name:"Web cây cảnh", address:"Số 60, Ngõ 235, Yên Hòa, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/Web+c%C3%A2y+c%E1%BA%A3nh+-+B%C3%A1n+c%C3%A2y+c%E1%BA%A3nh,+ch%C4%83m+s%C3%B3c,+thi%E1%BA%BFt+k%E1%BA%BF/@21.02171,105.7906833,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab506260a04f:0xa97effe60af09306!8m2!3d21.021705!4d105.792872"},
+                {name:"ViNaTrees", address:"74 Trung Kính, Yên Hoà, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/VINATREES/@21.015432,105.7928845,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab583465a3c1:0xcabd0abef13553c3!8m2!3d21.015427!4d105.7950732"}]  
    },
    ]
