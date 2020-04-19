@@ -338,7 +338,7 @@ const listOfGift = [
       characteristicsSuits:"Accessories",
       minPrice:2500000,
       maxPrice:5000000,
-      imageLink:"images/Hat.jpg",
+      imageLink:"images/Purse.jpg",
       shopInfo:[{name:"CHARLES & KEITH", address:"Vincom Center, 54A Nguyễn Chí Thanh, Láng Thượng, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/CHARLES+%26+KEITH/@21.0271101,105.8019804,14z/data=!4m8!1m2!2m1!1scharles+%26+keith!3m4!1s0x3135ab68842d505d:0x1dbff2abf4c8cebd!8m2!3d21.0235358!4d105.8088928"},
                 {name:"Pedro", address:"119 Trần Duy Hưng, Trung Hoà, Đống Đa, Hà Nội", link:"https://www.google.com/maps/place/Pedro+Vincom+Tr%E1%BA%A7n+Duy+H%C6%B0ng/@21.00511,105.7920443,17z/data=!3m1!4b1!4m5!3m4!1s0x3135adf9622175fb:0xa00fa560ad2223fa!8m2!3d21.00511!4d105.794233"},
                 {name:"Furla", address:"191 Bà Triệu, Lê Đại Hành, Hà Nội, Vietnam", link:"https://www.google.com/maps/place/Furla/@21.0113686,105.8471059,17z/data=!3m2!4b1!5s0x3135ab8ba7e8fd91:0xcf7ee1e594a5bec2!4m5!3m4!1s0x3135ab8ba71d3d7f:0x1fec213e84037adf!8m2!3d21.0113636!4d105.8492946"}]  
@@ -449,3 +449,121 @@ const listOfGift = [
                 {name:"ViNaTrees", address:"74 Trung Kính, Yên Hoà, Cầu Giấy, Hà Nội", link:"https://www.google.com/maps/place/VINATREES/@21.015432,105.7928845,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ab583465a3c1:0xcabd0abef13553c3!8m2!3d21.015427!4d105.7950732"}]  
    },
    ]
+
+const eVents = [
+   {  eventName: "valentine",
+      vieName: "Lễ Tình Nhân",
+      linkImage: "images\Valentine.jpg"
+   },
+
+   {  eventName: "20/10",
+      vieName: "Ngày phụ nữ Việt Nam 20/10",
+      linkImage: "images\20-10.jpg"
+   },
+
+   {  eventName: "8/3",
+      vieName: "Quốc tế phụ nữ",
+      linkImage: "images\8-3.jpg"
+   },
+
+   {  eventName: "chritmas",
+      vieName: "Lễ Giáng Sinh",
+      linkImage: "images\Christmas.jpg"
+   },
+
+   {  eventName: "tet",
+      vieName: "Ngày Tết",
+      linkImage: "images\Tet.jpg"
+   },
+
+   {  eventName: "birthday",
+      vieName: "Sinh nhật",
+      linkImage: "images\Birthday.jpg"
+   },
+
+   {  eventName: "anniversary",
+      vieName: "Kỉ niệm",
+      linkImage: "images\Anniversary.jpg"
+   },
+
+   {  eventName: "AllEvents",
+      vieName: "Phù hợp cho mọi ngày",
+      linkImage: "images\AllEvents.jpg"
+   },
+]
+
+const Gender = [
+   {  
+      genderName: "male",
+      vieName: "Nam",
+      linkImage: "images\male.png"
+   },
+
+   {
+      genderName: "female",
+      vieName: "Nữ",
+      linkImage: "images\female.png"
+   },
+
+   {
+      genderName: "both",
+      vieName: "Cả hai",
+      linkImage: "images\gender-equality.png"
+   }
+]
+
+const Relationships = [
+   {
+      relationshipName: "Father",
+      vieName:"Bố",
+      linkImage:"Html\images\Father.jpg"
+   },
+
+   {
+      relationshipName: "Mother",
+      vieName:"Mẹ",
+      linkImage:"Html\images\Mother.jpg"
+   },
+
+   {
+      relationshipName: "Husband",
+      vieName:"Chồng",
+      linkImage:"Html\images\Husband.jpg"
+   },
+
+   {
+      relationshipName: "Wife",
+      vieName:"Vợ",
+      linkImage:"Html\images\Wife.jpg"
+   },
+
+   {
+      relationshipName: "Boyfriend",
+      vieName:"Bạn trai",
+      linkImage:"Html\images\Boyfriend.jpg"
+   },
+
+   {
+      relationshipName: "Girlfriend",
+      vieName:"Bạn gái",
+      linkImage:"Html\images\Girlfriend.jpg"
+   },
+
+   {
+      relationshipName: "Co-worker",
+      vieName:"Đồng nghiệp",
+      linkImage:"Html\images\Co-worker.jpg"
+   },
+
+   {
+      relationshipName: "Boss",
+      vieName:"Sếp",
+      linkImage:"Html\images\Boss.jpg"
+   },
+
+   {
+      relationshipName: "Relatives",
+      vieName:"Người thân",
+      linkImage:"Html\images\Relatives.jpg"
+   }
+]
