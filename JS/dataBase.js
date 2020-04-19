@@ -453,42 +453,42 @@ const listOfGift = [
 const eVents = [
    {  eventName: "valentine",
       vieName: "Lễ Tình Nhân",
-      linkImage: "images\Valentine.jpg"
+      linkImage: "images/Valentine.jpg"
    },
 
    {  eventName: "20/10",
       vieName: "Ngày phụ nữ Việt Nam 20/10",
-      linkImage: "images\20-10.jpg"
+      linkImage: "images/20-10.jpg"
    },
 
    {  eventName: "8/3",
       vieName: "Quốc tế phụ nữ",
-      linkImage: "images\8-3.jpg"
+      linkImage: "images/8-3.jpg"
    },
 
    {  eventName: "chritmas",
       vieName: "Lễ Giáng Sinh",
-      linkImage: "images\Christmas.jpg"
+      linkImage: "images/Christmas.jpg"
    },
 
    {  eventName: "tet",
       vieName: "Ngày Tết",
-      linkImage: "images\Tet.jpg"
+      linkImage: "images/Tet.jpg"
    },
 
    {  eventName: "birthday",
       vieName: "Sinh nhật",
-      linkImage: "images\Birthday.jpg"
+      linkImage: "images/Birthday.jpg"
    },
 
    {  eventName: "anniversary",
       vieName: "Kỉ niệm",
-      linkImage: "images\Anniversary.jpg"
+      linkImage: "images/Anniversary.jpg"
    },
 
    {  eventName: "AllEvents",
       vieName: "Phù hợp cho mọi ngày",
-      linkImage: "images\AllEvents.jpg"
+      linkImage: "images/AllEvents.jpg"
    },
 ]
 
@@ -496,19 +496,19 @@ const Gender = [
    {  
       genderName: "male",
       vieName: "Nam",
-      linkImage: "images\male.png"
+      linkImage: "images/male.png"
    },
 
    {
       genderName: "female",
       vieName: "Nữ",
-      linkImage: "images\female.png"
+      linkImage: "images/female.png"
    },
 
    {
       genderName: "both",
       vieName: "Cả hai",
-      linkImage: "images\gender-equality.png"
+      linkImage: "images/gender-equality.png"
    }
 ]
 
@@ -516,54 +516,54 @@ const Relationships = [
    {
       relationshipName: "Father",
       vieName:"Bố",
-      linkImage:"Html\images\Father.jpg"
+      linkImage:"images/Father.jpg"
    },
 
    {
       relationshipName: "Mother",
       vieName:"Mẹ",
-      linkImage:"Html\images\Mother.jpg"
+      linkImage:"images/Mother.jpg"
    },
 
    {
       relationshipName: "Husband",
       vieName:"Chồng",
-      linkImage:"Html\images\Husband.jpg"
+      linkImage:"images/Husband.jpg"
    },
 
    {
       relationshipName: "Wife",
       vieName:"Vợ",
-      linkImage:"Html\images\Wife.jpg"
+      linkImage:"images/Wife.jpg"
    },
 
    {
       relationshipName: "Boyfriend",
       vieName:"Bạn trai",
-      linkImage:"Html\images\Boyfriend.jpg"
+      linkImage:"images/Boyfriend.jpg"
    },
 
    {
       relationshipName: "Girlfriend",
       vieName:"Bạn gái",
-      linkImage:"Html\images\Girlfriend.jpg"
+      linkImage:"images/Girlfriend.jpg"
    },
 
    {
       relationshipName: "Co-worker",
       vieName:"Đồng nghiệp",
-      linkImage:"Html\images\Co-worker.jpg"
+      linkImage:"images/Co-worker.jpg"
    },
 
    {
       relationshipName: "Boss",
       vieName:"Sếp",
-      linkImage:"Html\images\Boss.jpg"
+      linkImage:"images/Boss.jpg"
    },
 
    {
       relationshipName: "Relatives",
       vieName:"Người thân",
-      linkImage:"Html\images\Relatives.jpg"
+      linkImage:"images/Relatives.jpg"
    }
 ]
