@@ -1,0 +1,63 @@
+*{padding: 0;margin: 0;}
+.port
+{
+    margin-top: 50px;
+}
+.fooderRight
+{
+    float: right;
+    width: 700px;
+    height: 466.66px;
+}
+.fooderRigtImg
+{
+    width: 200px;
+    height: 240px;
+    margin-left: 50px;
+    position: relative;
+    border: 1px solid rgba(165, 163, 163, 0.479);
+    margin-bottom: 15px ;
+}
+.productImg
+{
+    width: 198px;
+    height: 200px;
+    padding-left: 0.2px;
+}
+.fooderRight .icon
+{
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 0%;
+    opacity: 0;
+}
+.fooderRigtImg .icon a
+{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    float: left;
+}
+.nameProduct
+{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.fooderRigtImg:hover
+{
+    border: 1px solid rgba(241, 64, 9, 0.479);
+}
+.fooderRigtImg:hover .icon
+{
+    transition: 1.2s;
+    left: 10%;
+    opacity: 1;
+}
+.fooderRigtImg .icon a:hover
+{
+    background-color: rgb(236, 124, 33);
+}
