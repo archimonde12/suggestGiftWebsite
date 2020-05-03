@@ -61,3 +61,11 @@
 {
     background-color: rgb(236, 124, 33);
 }
+.fooderRigtImg:hover 
+{
+    background-image:-webkit-linear-gradient(45deg,#f5c1174d 15%,#f785226e 40%,#e5127d63 85%);
+}
+.fooderRigtImg:hover .nameProduct
+{
+    color: rgb(240, 18, 55);
+}

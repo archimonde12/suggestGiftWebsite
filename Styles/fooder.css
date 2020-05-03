@@ -10,6 +10,7 @@
     color: white;
     border-bottom: 1px solid rgb(129, 128, 128) ;
     padding: 20px 0 20px 0;
+    padding-left: 75px;
 }
 .centerfooder .row
 {
@@ -36,13 +37,56 @@
 {
     padding: 5px 35px 5px 5px;
 }
-button#theodoi {
-    padding: 4px;
+a#theodoi {
+    padding: 5px;
     color: white;
     background-color: black;
     border: 1px solid black;
     border-radius: 5px;
 }
+a#theodoi:hover
+{
+    text-decoration: none;
+}
 .col-sm-4.nameFooder {
     padding-left: 80px;
+}
+.Toprate img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.Toprate .productTOP
+{
+    margin-top: 3px;
+    width: 150px;
+    height: 65px;
+    margin-bottom: 6px;
+    padding-left: 4px;
+    display: flex;
+    border: 1px solid white;
+
+}
+.Toprate .productTOP .tensp
+{
+    width: 80px;
+    padding-top: 20px;
+    color: tomato;
+}
+.productTOP:hover .tensp
+{
+    color: white;
+}
+
+.instagram img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.instagram
+{
+    margin-left: 80px;
+    width: 250px;
 }
