@@ -1,0 +1,67 @@
+*{padding: 0;margin: 0;}
+#sessionX
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 1600px;
+}
+.fooderLeft
+{
+    position: relative;
+    width: 760px;
+    height: 500px;
+    overflow: hidden;
+    display: inline-block;
+}
+.fooderLeftImg
+{
+    position: absolute;
+    width: 760px;
+    height: 500px;
+    z-index: 0;
+    overflow: hidden;
+}
+.backgroudOnImg
+{
+    width: 760px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.199);
+    height: 500px;
+}
+
+.noidung
+{
+    position: absolute;
+    color: whitesmoke;
+    z-index: 3;
+    top: 35%;
+    left: 18%;
+}
+.x
+{
+    position: absolute;
+    z-index: 4;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    margin: 40px;
+}
+.x:hover
+{
+    background-color: rgba(255, 255, 255, 0.671);
+    color: black;
+    text-decoration: none;
+}
+.fooderLeft:hover .noidung
+{
+    transition: 1.2s;
+    padding: 10px;
+    border-left: 2.5px solid white;
+}
+.fooderLeft:hover .fooderLeftImg
+{
+    transition: 2s;
+    transform: scale(1.1);
+}

@@ -4,17 +4,17 @@
     padding: 12px;
     color: white;
 }
-.row > .col-sm-4
-{
-    text-align: center;
-}
-
 .centerfooder
 {
     background-color: black;
     color: white;
     border-bottom: 1px solid rgb(129, 128, 128) ;
     padding: 20px 0 20px 0;
+    padding-left: 75px;
+}
+.centerfooder .row
+{
+    margin-right: 15px;
 }
 .bottomfooder
 {
@@ -22,8 +22,71 @@
     color: white;
     padding: 12px 0 12px 0;
 }
-.iconTOP
+.icon
 {
     display: inline-block;
-    float: left;
+    float: right;
+    padding-right: 140px;
+}
+
+.topfooder .row .email
+{
+    padding-top: 5px;
+}
+#gmail
+{
+    padding: 5px 35px 5px 5px;
+}
+a#theodoi {
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+a#theodoi:hover
+{
+    text-decoration: none;
+}
+.col-sm-4.nameFooder {
+    padding-left: 80px;
+}
+.Toprate img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.Toprate .productTOP
+{
+    margin-top: 3px;
+    width: 150px;
+    height: 65px;
+    margin-bottom: 6px;
+    padding-left: 4px;
+    display: flex;
+    border: 1px solid white;
+
+}
+.Toprate .productTOP .tensp
+{
+    width: 80px;
+    padding-top: 20px;
+    color: tomato;
+}
+.productTOP:hover .tensp
+{
+    color: white;
+}
+
+.instagram img
+{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.instagram
+{
+    margin-left: 80px;
+    width: 250px;
 }

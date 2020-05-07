@@ -37,22 +37,61 @@
 {
     width: 500px;
     opacity: 0;
-    animation: gototop 2s forwards;
-    animation-delay: 0.4s;
     z-index: 2;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(15%,-100%);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-@-webkit-keyframes gototop{
+.ct1
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(15%,-100%);
+    animation: gototop1 2s forwards;
+    animation-delay: 0.4s;
+}
+.ct2
+{   top: 60%;
+    left: 0%;
+    transform: translate(15%,-100%);
+    animation: gotoleft2 2s forwards;
+    animation-delay: 0.4s;
+}
+.ct3
+{
+    bottom: 10%;
+    left: 35%;
+    transform: translate(15%,-10%);
+    animation: gotobottom3 2s forwards;
+    animation-delay: 0.4s;
+}
+/* phần bottom */
+.ct1 .buttomxemthem
+{
+    animation: gotobottomClick 2s forwards;
+}
+.ct2 .buttomxemthem
+{
+    animation: gotobottomClick 2s forwards;   
+}
+.ct3 .buttomxemthem
+{
+    animation: gotobottomClick 2s forwards;
+}
+@-webkit-keyframes gototop1{
     from{top:30%;opacity: 0;}
     to{top:50%;opacity: 1;}
 }
-@-webkit-keyframes gotoleft{
-    from{left:30%;opacity: 0;}
+@-webkit-keyframes gotoleft2{
+    from{left:0%;opacity: 0;}
+    to{left:10%;opacity: 1;}
+}
+@-webkit-keyframes gotobottom3{
+    from{bottom:0%;opacity: 0;}
+    to{bottom:40%;opacity: 1;}
+}
+@-webkit-keyframes gotobottomClick{
+    from{left:10%;opacity: 0;}
     to{left:50%;opacity: 1;}
     
 }
@@ -68,7 +107,6 @@
     border: none;
     border-radius: 5px;
     opacity: 0;
-    animation: gotoleft 2s forwards;
     animation-delay: 0.4s;
 }
 .buttomxemthem:hover
