@@ -1,14 +1,12 @@
 *{padding: 0;margin: 0;}
 @keyframes example {
-    0%   {    background-image:-webkit-linear-gradient(45deg,#e7069163 15%,#f68c2f6e 40%,#e5127d63 85%);; left:0px; top:0px;}
-    25%  {    background-image:-webkit-linear-gradient(45deg,#0ee6444d 15%,#1417e46e 40%,#e70a0a63 85%);; left:200px; top:0px;}
-    50%  {    background-image:-webkit-linear-gradient(45deg,#eb260c4d 15%,#bdf81c6e 40%,#ee0a0a63 85%);; left:200px; top:200px;}
-    75%  {    background-image:-webkit-linear-gradient(45deg,#f516214d 15%,#eef1206e 40%,#05da5663 85%);; left:0px; top:200px;}
-    100% {    background-image:-webkit-linear-gradient(45deg,#44dd5e4d 15%,#1676f36e 40%,#e7069163 85%);; left:0px; top:0px;}
+    from {    background-color: rgb(255, 179, 151); }
+    to {    background-color: rgb(248, 26, 26); }
 }
 .giua
 {
     text-align: center;
+    background-color: blanchedalmond;
 }
 .backcolor
 {
