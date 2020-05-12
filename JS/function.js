@@ -4,14 +4,14 @@ function addResult(answerofQ) {
     let listGift = []
     document.getElementsByClassName("progress")[0].hidden = true
     document.getElementById("titleOfListGift").hidden = false
-    console.log(answerofQ)
+    
     listOfGift.forEach((value, index) => {
         if (checkAnswer(answerofQ, value)) {
             listGift.push(value)
         }
     })
-    console.log(listGift)
-    if(listGift==0){console.log("Cannot find a gift")}
+    
+    if (listGift == 0) { console.log("Cannot find a gift") }
     //Create numbers of carousel indicator
     let listOfResult = document.getElementById("listOfResult")
     listOfResult.innerHTML = `<ol class="carousel-indicators"></ol>
@@ -25,8 +25,8 @@ function addResult(answerofQ) {
 
         }
         else {
-            if(listGift.length % 3!=0)
-            carouselIndicators.innerHTML += `<li data-target="#listOfResult" data-slide-to="${i}" style="background-color: red;"></li>`
+            if (listGift.length % 3 != 0)
+                carouselIndicators.innerHTML += `<li data-target="#listOfResult" data-slide-to="${i}" style="background-color: red;"></li>`
         }
     }
 
@@ -47,7 +47,7 @@ function addResult(answerofQ) {
                 row.innerHTML += `
                         <div class="col-sm">
                             <div class="card">
-                                <div class="hover-background"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></div>
+                                <div class="hover-background"> <a href="${step[5]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
                                 <img src=${listGift[i * 3 + j].imageLink} class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">${listGift[i * 3 + j].vietnameseName}</p>
@@ -70,7 +70,7 @@ function addResult(answerofQ) {
                     row.innerHTML += `
                         <div class="col-sm">
                             <div class="card">
-                                <div class="hover-background"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></div>
+                                <div class="hover-background"><a href="${step[5]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
                                 <img src=${listGift[i * 3 + j].imageLink} class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">${listGift[i * 3 + j].vietnameseName}</p>
@@ -97,71 +97,32 @@ function addResult(answerofQ) {
     listGift.forEach((value, index) => {
         listGiftSelected.push(document.getElementById(value.nameOfGift))
     })
-    console.log(listGift)
     //Creater all result clickable
     for (i = 0; i < listGiftSelected.length; i++) {
-        console.log("create for "+listGiftSelected[i].id+" success")
         listGiftSelected[i].addEventListener("click", choiceResult);
     }
 }
 
 
-
-//---------------------------------------------------------------------------------
-function backToHome() {
-    document.querySelectorAll('section[style*=block]')[0].style.display = "none";
-    document.querySelector('section#homePage').style.display = "block"
-    showAllQuestion(questionPages[1].type)
-    step = 0
-}
-
-
 //---------------------------------------------------------------------------------
 function choiceResult() {
-    document.getElementById("listResultPage").style.display = "none";
-    document.getElementById("choiceResultPage").style.display = "block";
-    choiceGift = this.id
-    listOfGift.forEach((value, index) => {
-        if (choiceGift === value.nameOfGift) {
-            document.getElementById("choiceImage").innerHTML = `<img style="max-width:300px;max-height:300px;" src=${value.imageLink} alt="">`
-            document.getElementById("choiceDescription").innerHTML = value.vietnameseName
-            document.getElementById("choiceAdress1").innerHTML = `${value.shopInfo[0].name}:<a href=${value.shopInfo[0].link}>${value.shopInfo[0].address}</a>`
-            document.getElementById("choiceAdress2").innerHTML = `${value.shopInfo[1].name}:<a href=${value.shopInfo[1].link}>${value.shopInfo[1].address}</a>`
-            document.getElementById("choiceAdress3").innerHTML = `${value.shopInfo[2].name}:<a href=${value.shopInfo[2].link}>${value.shopInfo[2].address}</a>`
+    localStorage.setItem("choiceGift",this.id)
+}
+//---------------------------------------------------------------------------------
+function LoadingchoicedResultPage(choiceGift){
+    listOfGift.forEach(function(gift){
+        if(gift.nameOfGift===choiceGift){
+            document.getElementById("namePd").innerHTML=gift.vietnameseName
+            document.getElementById("imagePd").src=gift.imageLink
+            document.getElementById("zoomImage").style.backgroundImage=`url(${gift.imageLink})`
+            document.getElementById("map1").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[0].name}`
+            document.getElementById("map2").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[1].name}`
+            document.getElementById("map3").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[2].name}`
+            document.getElementById("adress1").innerHTML=gift.shopInfo[0].address
+            document.getElementById("adress2").innerHTML=gift.shopInfo[1].address
+            document.getElementById("adress3").innerHTML=gift.shopInfo[2].address
         }
     })
-    console.log(choiceGift)
-    step++;
-}
-
-//---------------------------------------------------------------------------------
-function getAdvice() {
-    homePage.style.display = "none"
-    questionPage1.style.display = "block"
-
-    step++
-}
-
-//---------------------------------------------------------------------------------
-function clickBackButton() {
-    if (step == 1) {
-        backToHome()
-        showAllQuestion(questionPages[step - 1].type) //fix lỗi không hiển thị khi back lại
-    } else if(step==4){
-        showAllQuestion(questionPages[step - 1].type)
-        answerPage.style.display = "none"
-        questionPages[step - 2].home.style.display = "block"
-        answerofQ[step - 2] = ""
-        step--
-    }
-    {
-        showAllQuestion(questionPages[step - 1].type)
-        questionPages[step - 1].home.style.display = "none"
-        questionPages[step - 2].home.style.display = "block"
-        answerofQ[step - 2] = ""
-        step--
-    }
-    console.log(step)
 }
 
 //---------------------------------------------------------------------------------
@@ -185,22 +146,28 @@ function addingQuestion(nameOfQuestions, location) {
 
     nameOfQuestions.forEach(function (kindEvent) {
         let newlist = `  
-        <li>
-            <button id=${kindEvent.Name} class="answerQuestion${location} question-button">
-                <img class="question-image" src=${kindEvent.linkImage}>
+        <a href="${step[location + 1]}">
+            <button id=${kindEvent.Name} class="answerQuestion${location} question-button btn btn-info addstyle Answer">
+                <img class="question-image" style="width:200px;height:200px" src=${kindEvent.linkImage}>
                 <p>${kindEvent.vieName}</p>
             </button>
-        </li>`
-        document.getElementById("gallery-ques-" + location).innerHTML += newlist
+        </a>`
+        document.getElementById("allInAnswer" + location).innerHTML += newlist
+    })
+
+    nameOfQuestions.forEach(function (kindEvent) {
+        document.getElementById(kindEvent.Name).addEventListener("click", function () {
+            localStorage.setItem("answerOfQuestion"+location,this.id)
+        })
     })
 }
 
 //---------------------------------------------------------------------------------
 
-function hiddingSomeQuestion(answer, array) {
+function hiddingSomeQuestion(lastAnswer, array) {
     array.forEach(function (foundItem) {
         if (!(foundItem.prvAnswer === "all")) {
-            if (!foundItem.prvAnswer.includes(answer)) {
+            if (!foundItem.prvAnswer.includes(lastAnswer)) {
                 document.getElementById(foundItem.Name).parentElement.hidden = true
             }
         }
@@ -214,16 +181,9 @@ function showAllQuestion(array) {
 }
 
 function checkAnswer(answers, gift) {
-    console.log("Check ",gift.nameOfGift)
     let checkGender = (gift.genderSuits === "both") || (answers[0] === gift.genderSuits)
-    console.log("Check gender result:",checkGender)
-    let checkRelationShips = gift.relationShips.includes(answers[1]) 
-    console.log("Check relationShips result:",checkRelationShips)
-    let checkEvent = gift.situationSuits.includes(answers[2])|| (gift.situationSuits=="AllEvents")
-    console.log("User answer is:",answers[2])
-    console.log("Check answer is:",gift.situationSuits)
-    console.log("Check check event result:",checkEvent)
-    console.log(checkGender && checkRelationShips && checkEvent)
+    let checkRelationShips = gift.relationShips.includes(answers[1])
+    let checkEvent = gift.situationSuits.includes(answers[2]) || (gift.situationSuits == "AllEvents")
     if (checkGender && checkRelationShips && checkEvent) {
         return (true)
     } else {

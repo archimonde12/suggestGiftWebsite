@@ -3,6 +3,7 @@
 {
     padding-top: 20px;
     display: flex;
+    align-items: center;
     background-color: blanchedalmond;
 }
 .giua
@@ -17,13 +18,21 @@
 }
 .productLeft
 {
-    margin-left: 20px;
+    margin-left: 100px;
+    flex:1;
 }
+
+.productRight
+{
+    margin-right: 100px;
+    flex:1;
+}
+
 figure.zoom {
     background-position: 50% 50%;
     position: relative;
-    width: 800px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     cursor: zoom-in;
   }
@@ -54,11 +63,11 @@ figure.zoom {
     background-color: #f29351;
     margin-bottom: 30px;
     margin-left: 50px;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 10px;
     border-radius: 4px;
 }
-#map i
+.map>i
 {
     color: black;
     padding: 9px;
@@ -67,20 +76,20 @@ figure.zoom {
     margin-right: 10px;
 
 }
-#map i:hover
+.map>i:hover
 {
     transition: 0.3s;
     background-color: salmon;
     color: white;
     text-decoration: none;
 }
-#adress
+.adress
 {
     padding-left: 140px;
     padding-right: 30px;
     font-family: cursive;
 }
-#map
+.map
 {
     color: white;
     text-decoration: none;
@@ -114,7 +123,6 @@ figure.zoom {
 #follow
 {
     margin-top: 60px;
-    margin-left: 50px;
     text-align: right;
 }
 .share:hover
@@ -140,13 +148,21 @@ figure.zoom {
 }
 .x
 {
-    display: block;
+    display:block;
     background-color: blanchedalmond;
-    padding-left: 42%;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
+
+.x button
+{
+    margin: 0px 20px;
+}
+
 .backbutton
 {
-    margin-left: 10px;
+     margin-left: 10px;
      margin-bottom: 20px;
 }
 .y{

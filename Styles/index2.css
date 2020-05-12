@@ -25,28 +25,36 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-#allInAnswer
+.allInAnswer
 {
     margin-top: 90px;
     padding-left: 80px;
     display: inline-flex;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
-#Answer
+.Answer
 {
     cursor: pointer;
     padding: 40px;
     margin-right: 60px;
+    background-color: white;
+    color:black
 }
-button#Answer {
+
+.Answer:hover{
+    background-color: 8ed4ef;
+}
+
+.Answer>p{
+    
+}
+
+button .Answer {
     border-radius: 230px;
     width: 250px;
     height: 150px;
 }
-/* .addstyle
-{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-} */
+
 .addstyle:hover
 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -58,3 +66,17 @@ button#Answer {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+.x
+{
+    display:block;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.x button
+{
+    margin: 0px 20px;
+}
+

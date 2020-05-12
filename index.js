@@ -41,4 +41,5 @@ var header = document.querySelector('#menu');
 	                                  header.classList.remove('sticky');
 	}
 
-	document.addEventListener('scroll', onScroll);
+  document.addEventListener('scroll', onScroll);
+  
