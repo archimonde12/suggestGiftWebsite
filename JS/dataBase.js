@@ -594,4 +594,4 @@ const Relationships = [
    }
 ]
 
-const step=["index.html","Question 1.html","Question 2.html","Question 3.html","List Result.html","Your Choiced Gift.html"]
+const step=["index.html","Question 1.html","Question 2.html","Question 3.html","Question 4.html","List Result.html","Your Choiced Gift.html"]

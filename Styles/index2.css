@@ -29,14 +29,14 @@
 {
     margin-top: 90px;
     padding-left: 80px;
-    display: inline-flex;
-    margin-bottom: 100px;
+    display: inline-block;
 }
 .Answer
 {
     cursor: pointer;
-    padding: 40px;
+    padding: 20px;
     margin-right: 60px;
+    margin-bottom: 60px;
     background-color: white;
     color:black
 }
@@ -46,7 +46,7 @@
 }
 
 .Answer>p{
-    
+    padding-top: 20px;
 }
 
 button .Answer {

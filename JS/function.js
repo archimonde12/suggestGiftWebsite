@@ -4,13 +4,15 @@ function addResult(answerofQ) {
     let listGift = []
     document.getElementsByClassName("progress")[0].hidden = true
     document.getElementById("titleOfListGift").hidden = false
-    
-    listOfGift.forEach((value, index) => {
-        if (checkAnswer(answerofQ, value)) {
-            listGift.push(value)
+
+    listOfGift.forEach((gift) => {
+        if (checkAnswer(answerofQ, gift)) {
+            listGift.push(gift)
         }
     })
-    
+
+
+
     if (listGift == 0) { console.log("Cannot find a gift") }
     //Create numbers of carousel indicator
     let listOfResult = document.getElementById("listOfResult")
@@ -44,16 +46,18 @@ function addResult(answerofQ) {
             </div>`
             let row = document.querySelectorAll(".carousel-item .container .row")[document.querySelectorAll(".carousel-item .container .row").length - 1]
             for (let j = 0; j < 3; j++) {
-                row.innerHTML += `
+                if (listGift[i * 3 + j]) {
+                    row.innerHTML += `
                         <div class="col-sm">
                             <div class="card">
-                                <div class="hover-background"> <a href="${step[5]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
+                                <div class="hover-background"> <a href="${step[6]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
                                 <img src=${listGift[i * 3 + j].imageLink} class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">${listGift[i * 3 + j].vietnameseName}</p>
                                 </div>
                             </div>
                         </div>`
+                }
             }
 
         } else {
@@ -70,7 +74,7 @@ function addResult(answerofQ) {
                     row.innerHTML += `
                         <div class="col-sm">
                             <div class="card">
-                                <div class="hover-background"><a href="${step[5]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
+                                <div class="hover-background"><a href="${step[6]}"><button id="${listGift[i * 3 + j].nameOfGift}"><i class="fas fa-heart fa-2x"></i></button></a></div>
                                 <img src=${listGift[i * 3 + j].imageLink} class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">${listGift[i * 3 + j].vietnameseName}</p>
@@ -83,6 +87,7 @@ function addResult(answerofQ) {
     }
 
     //Create carousel control
+    if(Math.floor(listGift.length / 3)>0){ //Fix lỗi hiển thị carousel control khi chỉ có 1 trang
     listOfResult.innerHTML += `
         <a class="carousel-control-prev" href="#listOfResult" role="button" data-slide="prev" style="opacity:1;">
             <span class="carousel-control-prev-icon" aria-hidden="true" style="opacity:1;width:40px;height:40px;border:5px solid white;border-radius:5px;padding:10px;background-color:salmon"></span>
@@ -92,6 +97,16 @@ function addResult(answerofQ) {
             <span class="carousel-control-next-icon"  aria-hidden="true" style="opacity:1;width:40px;height:40px;border:5px solid white;border-radius:5px;padding:10px;background-color:salmon"></span>
             <span class="sr-only">Next</span>
         </a>`
+    } else {
+        listOfResult.innerHTML += `
+        <a class="carousel-control-prev" href="#listOfResult" role="button" data-slide="prev" style="opacity:1;">
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#listOfResult" role="button" data-slide="next" style="opacity:1;">
+            
+            <span class="sr-only">Next</span>
+        </a>`
+    }
     //Selector all resultGift
     let listGiftSelected = []
     listGift.forEach((value, index) => {
@@ -106,21 +121,21 @@ function addResult(answerofQ) {
 
 //---------------------------------------------------------------------------------
 function choiceResult() {
-    localStorage.setItem("choiceGift",this.id)
+    localStorage.setItem("choiceGift", this.id)
 }
 //---------------------------------------------------------------------------------
-function LoadingchoicedResultPage(choiceGift){
-    listOfGift.forEach(function(gift){
-        if(gift.nameOfGift===choiceGift){
-            document.getElementById("namePd").innerHTML=gift.vietnameseName
-            document.getElementById("imagePd").src=gift.imageLink
-            document.getElementById("zoomImage").style.backgroundImage=`url(${gift.imageLink})`
-            document.getElementById("map1").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[0].name}`
-            document.getElementById("map2").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[1].name}`
-            document.getElementById("map3").innerHTML=`<i class="fa fa-search"></i>${gift.shopInfo[2].name}`
-            document.getElementById("adress1").innerHTML=gift.shopInfo[0].address
-            document.getElementById("adress2").innerHTML=gift.shopInfo[1].address
-            document.getElementById("adress3").innerHTML=gift.shopInfo[2].address
+function LoadingchoicedResultPage(choiceGift) {
+    listOfGift.forEach(function (gift) {
+        if (gift.nameOfGift === choiceGift) {
+            document.getElementById("namePd").innerHTML = gift.vietnameseName
+            document.getElementById("imagePd").src = gift.imageLink
+            document.getElementById("zoomImage").style.backgroundImage = `url(${gift.imageLink})`
+            document.getElementById("map1").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[0].name}`
+            document.getElementById("map2").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[1].name}`
+            document.getElementById("map3").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[2].name}`
+            document.getElementById("adress1").innerHTML = gift.shopInfo[0].address
+            document.getElementById("adress2").innerHTML = gift.shopInfo[1].address
+            document.getElementById("adress3").innerHTML = gift.shopInfo[2].address
         }
     })
 }
@@ -157,7 +172,7 @@ function addingQuestion(nameOfQuestions, location) {
 
     nameOfQuestions.forEach(function (kindEvent) {
         document.getElementById(kindEvent.Name).addEventListener("click", function () {
-            localStorage.setItem("answerOfQuestion"+location,this.id)
+            localStorage.setItem("answerOfQuestion" + location, this.id)
         })
     })
 }
@@ -181,9 +196,16 @@ function showAllQuestion(array) {
 }
 
 function checkAnswer(answers, gift) {
-    let checkGender = (gift.genderSuits === "both") || (answers[0] === gift.genderSuits)
+    console.log("-" + gift.nameOfGift)
+    let checkGender = (gift.genderSuits === "both") || (answers[0] === gift.genderSuits) || (answers[0] === "both")
+    console.log(gift.genderSuits)
+    console.log(checkGender)
     let checkRelationShips = gift.relationShips.includes(answers[1])
+    console.log(gift.relationShips)
+    console.log(checkRelationShips)
     let checkEvent = gift.situationSuits.includes(answers[2]) || (gift.situationSuits == "AllEvents")
+    console.log(gift.situationSuits)
+    console.log(checkEvent)
     if (checkGender && checkRelationShips && checkEvent) {
         return (true)
     } else {
