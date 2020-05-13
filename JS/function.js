@@ -11,8 +11,13 @@ function addResult(answerofQ) {
         }
     })
 
-
-
+    
+    let numberOfPage
+    if(listGift.length % 3 != 0){
+        numberOfPage=Math.floor(listGift.length / 3)
+    } else {
+        numberOfPage=Math.floor(listGift.length / 3)-1
+    }
     if (listGift == 0) { console.log("Cannot find a gift") }
     //Create numbers of carousel indicator
     let listOfResult = document.getElementById("listOfResult")
@@ -20,25 +25,25 @@ function addResult(answerofQ) {
     <div class="carousel-inner"></div>`
     let carouselIndicators = document.querySelectorAll("#listOfResult .carousel-indicators")[0]
     carouselIndicators.innerHTML = ""
-    for (let i = 0; i <= Math.floor(listGift.length / 3); i++) {
+    for (let i = 0; i <= numberOfPage; i++) {
         if (i == 0) {
             carouselIndicators.innerHTML += `<li data-target="#listOfResult" data-slide-to="0" class="active" style="background-color: red;">
             </li>`
-
         }
         else {
-            if (listGift.length % 3 != 0)
+           
                 carouselIndicators.innerHTML += `<li data-target="#listOfResult" data-slide-to="${i}" style="background-color: red;"></li>`
-        }
+
+        } 
     }
 
     //Create numbers of carousel items
     let carouselInner = document.querySelectorAll("#listOfResult .carousel-inner")[0]
     carouselInner.innerHTM = ""
-    for (let i = 0; i <= Math.floor(listGift.length / 3); i++) {
+    for (let i = 0; i <= numberOfPage; i++) {
         if (i == 0) {
             carouselInner.innerHTML += ` 
-            <div class="carousel-item active">
+            <div class="carousel-item active" style="background-image:none">
                 <div class="container">
                     <div class="row">
                     </div>
@@ -62,7 +67,7 @@ function addResult(answerofQ) {
 
         } else {
             carouselInner.innerHTML += `
-            <div class="carousel-item">
+            <div class="carousel-item" style="background-image:none">
                 <div class="container">
                     <div class="row">
                     </div>

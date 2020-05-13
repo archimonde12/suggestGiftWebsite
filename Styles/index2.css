@@ -27,7 +27,7 @@
 }
 .allInAnswer
 {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-left: 80px;
     display: inline-block;
 }
@@ -46,7 +46,8 @@
 }
 
 .Answer>p{
-    padding-top: 20px;
+    padding-top: 1rem;
+    margin-bottom:0;
 }
 
 button .Answer {
