@@ -623,7 +623,7 @@ const Money = [
 
    {
       Name: "Luxury",
-      vieName: "Sa xỉ",
+      vieName: "Xa xỉ",
       minValue: 5000000,
       maxValue: 100000000,
       linkImage: "Html/images/5000k.jpg"
