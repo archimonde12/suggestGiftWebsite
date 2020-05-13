@@ -412,7 +412,7 @@ const listOfGift = [
       situationSuits: ["christmas", "birthday", "anniversary", "tet"],
       characteristicsSuits: "Gift",
       minPrice: 3000000,
-      maxPrice: 20000000,
+      maxPrice: 10000000,
       imageLink: "Html/images/Pottery.jpg",
       shopInfo: [{ name: "Gốm Sứ Bát Tràng", address: "Bát Tràng, Gia Lâm, Gia Lâm Hà Nội", link: "https://www.google.com/maps/place/G%E1%BB%91m+S%E1%BB%A9+B%C3%A1t+Tr%C3%A0ng/@20.9773841,105.9114339,17z/data=!3m1!4b1!4m5!3m4!1s0x3135aee79afe4a13:0xd8b249d1178f40b!8m2!3d20.9773791!4d105.9136226" },
       { name: "Ceramics Minh Quang", address: "251 Giang Cao, Bát Tràng, Gia Lâm, Hà Nội", link: "https://www.google.com/maps/place/Ceramics+Minh+Quang/@20.9783439,105.9110115,17z/data=!3m1!4b1!4m5!3m4!1s0x3135aedc0415070d:0xf209d935315771fa!8m2!3d20.9783389!4d105.9132002" },
@@ -595,3 +595,37 @@ const Relationships = [
 ]
 
 const step=["index.html","Question 1.html","Question 2.html","Question 3.html","List Result.html","Your Choiced Gift.html"]
+
+const Money = [
+   {
+      Name: "Budget",
+      vieName: "Tiết kiệm",
+      minValue: 0,
+      maxValue: 200000,
+      linkImage: "Html/images/200k.jpg"
+   },
+
+   {
+      Name: "Medium",
+      vieName: "Bình dân",
+      minValue: 200000,
+      maxValue: 1000000,
+      linkImage: "Html/images/200k-1000k.jpg"
+   },
+
+   {
+      Name: "Expensive",
+      vieName: "Cao cấp",
+      minValue: 1000000,
+      maxValue: 5000000,
+      linkImage: "Html/images/1000k-5000k.jpg"
+   },
+
+   {
+      Name: "Luxury",
+      vieName: "Sa xỉ",
+      minValue: 5000000,
+      maxValue: 100000000,
+      linkImage: "Html/images/5000k.jpg"
+   },
+]
