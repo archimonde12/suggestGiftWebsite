@@ -87,8 +87,8 @@ function addResult(answerofQ) {
     }
 
     //Create carousel control
-    if(Math.floor(listGift.length / 3)>0){ //Fix lỗi hiển thị carousel control khi chỉ có 1 trang
-    listOfResult.innerHTML += `
+    if (Math.floor(listGift.length / 3) > 0) { //Fix lỗi hiển thị carousel control khi chỉ có 1 trang
+        listOfResult.innerHTML += `
         <a class="carousel-control-prev" href="#listOfResult" role="button" data-slide="prev" style="opacity:1;">
             <span class="carousel-control-prev-icon" aria-hidden="true" style="opacity:1;width:40px;height:40px;border:5px solid white;border-radius:5px;padding:10px;background-color:salmon"></span>
             <span class="sr-only">Previous</span>
@@ -114,7 +114,14 @@ function addResult(answerofQ) {
     })
     //Creater all result clickable
     for (i = 0; i < listGiftSelected.length; i++) {
-        listGiftSelected[i].addEventListener("click", choiceResult);
+        listGiftSelected[i].addEventListener("click", choiceResult)
+        let selectordiv = listGiftSelected[i].parentElement.parentElement.parentElement
+        selectordiv.addEventListener("mouseover", function () {
+            console.log(this.children[1].src)
+            console.log("Mouse Over")
+            this.parentElement
+            // this.parentElement.parentElement.style.backgroundImage=`url`
+        })
     }
 }
 
@@ -131,8 +138,11 @@ function LoadingchoicedResultPage(choiceGift) {
             document.getElementById("imagePd").src = gift.imageLink
             document.getElementById("zoomImage").style.backgroundImage = `url(${gift.imageLink})`
             document.getElementById("map1").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[0].name}`
+            document.getElementById("map1").href=gift.shopInfo[0].link
             document.getElementById("map2").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[1].name}`
+            document.getElementById("map2").href=gift.shopInfo[1].link
             document.getElementById("map3").innerHTML = `<i class="fa fa-search"></i>${gift.shopInfo[2].name}`
+            document.getElementById("map3").href=gift.shopInfo[2].link
             document.getElementById("adress1").innerHTML = gift.shopInfo[0].address
             document.getElementById("adress2").innerHTML = gift.shopInfo[1].address
             document.getElementById("adress3").innerHTML = gift.shopInfo[2].address
@@ -158,18 +168,27 @@ function loadingResultPage() {
 
 //---------------------------------------------------------------------------------
 function addingQuestion(nameOfQuestions, location) {
-
+    // Show Question
     nameOfQuestions.forEach(function (kindEvent) {
+        let questiondetails
+        if (location == 4) {
+            questiondetails = `
+            <p>${kindEvent.vieName}</p>
+            <p>${convertMoneyToMoreStyle(kindEvent.minValue)}-${convertMoneyToMoreStyle(kindEvent.maxValue)} VNĐ</p>`
+        } else {
+            questiondetails = `<p>${kindEvent.vieName}</p>`
+        }
+
         let newlist = `  
         <a href="${step[location + 1]}">
             <button id=${kindEvent.Name} class="answerQuestion${location} question-button btn btn-info addstyle Answer">
                 <img class="question-image" style="width:200px;height:200px" src=${kindEvent.linkImage}>
-                <p>${kindEvent.vieName}</p>
+                ${questiondetails}
             </button>
         </a>`
         document.getElementById("allInAnswer" + location).innerHTML += newlist
     })
-
+    //Save user answer
     nameOfQuestions.forEach(function (kindEvent) {
         document.getElementById(kindEvent.Name).addEventListener("click", function () {
             localStorage.setItem("answerOfQuestion" + location, this.id)
@@ -196,19 +215,47 @@ function showAllQuestion(array) {
 }
 
 function checkAnswer(answers, gift) {
-    console.log("-" + gift.nameOfGift)
+    //Kiểm tra giới tính
     let checkGender = (gift.genderSuits === "both") || (answers[0] === gift.genderSuits) || (answers[0] === "both")
-    console.log(gift.genderSuits)
-    console.log(checkGender)
+    //Kiểm tra mối quan hệ
     let checkRelationShips = gift.relationShips.includes(answers[1])
-    console.log(gift.relationShips)
-    console.log(checkRelationShips)
+    //Kiểm tra sự kiện
     let checkEvent = gift.situationSuits.includes(answers[2]) || (gift.situationSuits == "AllEvents")
-    console.log(gift.situationSuits)
-    console.log(checkEvent)
-    if (checkGender && checkRelationShips && checkEvent) {
+    //Kiểm tra giá 
+    let minPrice;
+    let maxPrice;
+    switch (answers[3]) {
+        case "Budget":
+            minPrice = 0;
+            maxPrice = 200000;
+            break;
+        case "Medium":
+            minPrice = 200000;
+            maxPrice = 1000000;
+            break;
+        case "Expensive":
+            minPrice = 1000000;
+            maxPrice = 5000000;
+            break;
+        case "Luxury":
+            minPrice = 5000000;
+            maxPrice = 99999999;
+            break;
+        default:
+        // code block
+    }
+    console.log(minPrice, maxPrice)
+    let checkPrice = !((gift.minPrice > maxPrice) || (gift.maxPrice < minPrice))
+    if (checkGender && checkRelationShips && checkEvent && checkPrice) {
         return (true)
     } else {
         return (false)
     }
+}
+
+function convertMoneyToMoreStyle(value) {
+    if (value / 1000000 >= 1) { return (value / 1000000 + "M") } else {
+        return (value / 1000 + "K")
+    }
+
 }

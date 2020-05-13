@@ -15,6 +15,7 @@
     background-color: rgb(241, 107, 58);
     color: white;
     transition: 0.4s;
+    background-size:cover;
 }
 img{
     width: 275px;

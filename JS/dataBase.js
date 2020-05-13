@@ -595,3 +595,37 @@ const Relationships = [
 ]
 
 const step=["index.html","Question 1.html","Question 2.html","Question 3.html","Question 4.html","List Result.html","Your Choiced Gift.html"]
+
+const Money = [
+   {
+      Name: "Budget",
+      vieName: "Tiết kiệm",
+      minValue: 0,
+      maxValue: 200000,
+      linkImage: "Html/images/200k.jpg"
+   },
+
+   {
+      Name: "Medium",
+      vieName: "Bình dân",
+      minValue: 200000,
+      maxValue: 1000000,
+      linkImage: "Html/images/200k-1000k.jpg"
+   },
+
+   {
+      Name: "Expensive",
+      vieName: "Cao cấp",
+      minValue: 1000000,
+      maxValue: 5000000,
+      linkImage: "Html/images/1000k-5000k.jpg"
+   },
+
+   {
+      Name: "Luxury",
+      vieName: "Sa xỉ",
+      minValue: 5000000,
+      maxValue: 100000000,
+      linkImage: "Html/images/5000k.jpg"
+   },
+]
