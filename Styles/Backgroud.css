@@ -19,7 +19,7 @@
 }
 
 .slideshow-container .backgroud {
-    height: 700px;
+    height: 600px;
     width: 100%;
 }
 
@@ -173,10 +173,10 @@
 }
 
 .from2 {
-    position: absolute;
+    position:absolute;
     left: 0;
     z-index: 1;
-    margin-top: 10px;
+    padding-top:20px;
     margin-left: 20px;
 }
 
@@ -284,12 +284,14 @@
 #session1-mb {
     display: none;
 }
-
+/* Optimze for mobilephone */
 @media only screen and (max-width: 558px) {
     #session1 {
         display: none;
     }
+
     #session1-mb {
+        
         display: block;
         width: 100%;
         height: 500px;
@@ -298,11 +300,60 @@
         display: block;
         position: relative;
     }
+    .logo-container{
+        display:block;
+        height:15vh;
+    }
+    .logo-container>a{
+        height:15vh;
+        width: 46vh;
+        display:block;
+        margin:auto;
+    }
+    .logo{
+        z-index: 1;
+        height: 15vh;
+        display: block;
+        left:auto;
+        right:auto;
+    }
+
+    .icon-container{
+        display: block;
+        height:6vh;
+    }
+    .icon-container>.from2{
+        display:block;
+        position: relative;
+        height:6vh;
+        width: 80vw;
+        text-align: center;
+        margin: auto auto;
+    }
+
+    .contentback-container{
+        display:block;
+        height:50vh;
+        margin-top:10vh;
+    }
     .contentback {
-        witdh: 300px;
+        width:100%;
+        margin: -15vh auto -20vh auto;
+        height:45vh;
         text-align: center;
         padding-left: 10px;
         background-color: rgba(0, 0, 0, 0.2)
+    }
+
+    .contentback>small{
+        font-size:2.5vh
+    }
+    .button-container{
+        display:block;
+        text-align: center;
+        height:6vh;
+        background-color: transparent;
+        margin-top: 3vh;
     }
     .ct3 {
         bottom: 10%;
@@ -320,8 +371,30 @@
             opacity: 0;
         }
         to {
-            left: 10%;
+            left: 0%;
             opacity: 1;
         }
+    }
+
+    .buttonxemthem-mb{
+        background-color: black;
+        padding:2vh;
+        margin-top:2vh;
+        border-radius: 1vh;
+        color:whitesmoke;
+    }
+
+    .buttonxemthem-mb:hover{
+        background-color: white;
+        color:black;
+    }
+    .buttonxemthem-mb:active{
+        background-color: white;
+        color:black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .backcolor>.from2{
+        display:none
     }
 }

@@ -16,7 +16,7 @@
 }
 #quesion
 {
-    padding: 10px 0 10px 0;
+    padding: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px;
     color: white;
@@ -81,3 +81,6 @@ button .Answer {
     margin: 0px 20px;
 }
 
+/* Optimze for mobilephone */
+@media only screen and (max-width: 558px) {
+}

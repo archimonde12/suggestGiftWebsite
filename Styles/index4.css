@@ -144,8 +144,10 @@ ul.gallery{
 }
 .x
 {
-    display: inline-flex;
-    margin-left: 42%;
+    display: block;
+    height: 12vh;
+    text-align: center;
+   
 }
 .backbutton
 {
@@ -170,4 +172,11 @@ a.carousel-control-next {
 }
 .col-sm {
     background-color: blanchedalmond;
+}
+
+/* Optimze for mobilephone */
+@media only screen and (max-width: 558px) {
+    #titleOfListGift{
+        line-height: 8vh;
+    }
 }
