@@ -131,14 +131,14 @@
         opacity: 0;
     }
     to {
-        left: 50%;
+        left: 30%;
         opacity: 1;
     }
 }
 
 .buttomxemthem {
     padding: 10px;
-    background-color: black;
+    background-color: #ff92a6;
     color: white;
     z-index: 3;
     position: absolute;
@@ -334,7 +334,9 @@
     .contentback-container{
         display:block;
         height:50vh;
-        margin-top:10vh;
+        margin-top:5vh;
+        padding-top:5vh;
+        background-color: rgba(0, 0, 0, 0.2)
     }
     .contentback {
         width:100%;
@@ -342,7 +344,7 @@
         height:45vh;
         text-align: center;
         padding-left: 10px;
-        background-color: rgba(0, 0, 0, 0.2)
+        
     }
 
     .contentback>small{
@@ -352,7 +354,6 @@
         display:block;
         text-align: center;
         height:6vh;
-        background-color: transparent;
         margin-top: 3vh;
     }
     .ct3 {
@@ -377,7 +378,7 @@
     }
 
     .buttonxemthem-mb{
-        background-color: black;
+        background-color: #ff92a6;
         padding:2vh;
         margin-top:2vh;
         border-radius: 1vh;
