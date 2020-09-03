@@ -52,7 +52,9 @@
     position: absolute;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:rgba(0, 0, 0, 0.2)
+    background-color:rgba(0, 0, 0, 0.2);
+    padding:10px;
+    border-radius: 10px;
 }
 
 .ct1 {
@@ -159,7 +161,7 @@
 }
 
 .chuto {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 #menu {
@@ -352,7 +354,7 @@
         height:45vh;
         text-align: center;
         background-color:transparent;
-        
+        padding:0px;
     }
 
     .contentback>small{
@@ -376,6 +378,10 @@
 
         width: 100px ;
         margin:10px auto !important;
+    }
+
+    #newsletter{
+        margin-bottom:10px;
     }
     .ct3 {
         bottom: 10%;
@@ -419,4 +425,11 @@
     .backcolor>.from2{
         display:none
     }
+}
+
+
+#session3 .topfooder{
+    text-align:center;
+    padding-left:40px;
+    padding-right: 0;
 }
