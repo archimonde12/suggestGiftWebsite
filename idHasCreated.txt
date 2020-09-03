@@ -1,0 +1,18 @@
+Mot so key id
+
+signIn -> form Sign In
+signUp -> form Sign Up
+
+name-error -> bao loi trong Sign Up
+email-error -> bao loi trong Sign Up
+password-error -> bao loi trong Sign Up
+password-Confirmation-error -> bao loi trong Sign Up
+sign-up-error -> Bao loi regiter trong Sign Up
+sign-up-btn -> Id cua button sign Up
+
+sign-in-name-error -> bao loi trong Sign In
+sign-in-email-error -> bao loi trong Sign In
+sign-in-password-error -> bao loi trong Sign In
+sign-in-password-Confirmation-error -> bao loi trong Sign In
+sign-in-error -> Bao loi regiter trong Sign In
+sign-in-btn -> Id cua button sign In
